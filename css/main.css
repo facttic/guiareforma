@@ -2154,6 +2154,72 @@ section[id] {
   color: var(--color-ink-light);
 }
 
+/* Variante impacto - para datos financieros destacados */
+.info-destacada.dato-impacto {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #f59e0b;
+  border-left-color: #d97706;
+}
+
+.info-destacada.dato-impacto h4 {
+  color: #92400e;
+  font-size: var(--text-hand-lg);
+}
+
+.impacto-numeros {
+  list-style: none;
+  margin: var(--space-4) 0;
+  padding: 0;
+}
+
+.impacto-numeros li {
+  position: relative;
+  padding: var(--space-2) 0 var(--space-2) var(--space-6);
+  border-bottom: 1px dashed #d97706;
+}
+
+.impacto-numeros li:last-child {
+  border-bottom: none;
+}
+
+.impacto-numeros li::before {
+  content: "💰";
+  position: absolute;
+  left: 0;
+  top: var(--space-2);
+}
+
+.impacto-numeros li strong {
+  color: #92400e;
+  font-weight: 700;
+}
+
+.dato-color {
+  margin-top: var(--space-4);
+  padding: var(--space-3);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-sm);
+  font-style: italic;
+  color: #78350f;
+}
+
+.fuente-datos {
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  color: #92400e;
+  opacity: 0.8;
+}
+
+.fuente-datos a {
+  color: #78350f;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.fuente-datos a:hover {
+  color: #451a03;
+}
+
 /* --------------------------------------------------------------------------
    Cards de cambios - Estilo apuntes/notas
    -------------------------------------------------------------------------- */
