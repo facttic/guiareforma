@@ -1418,8 +1418,29 @@ section[id] {
 .antes-despues {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-6);
   margin-bottom: var(--space-6);
+}
+
+/* Flecha visual entre cards en mobile */
+@media (max-width: 639px) {
+  .antes-despues {
+    gap: var(--space-2);
+  }
+
+  .antes-despues .antes-card {
+    margin-bottom: 0;
+  }
+
+  .antes-despues .antes-card::after {
+    content: '↓';
+    display: block;
+    text-align: center;
+    font-size: var(--text-xl);
+    color: var(--color-ink-muted);
+    padding: var(--space-2) 0;
+    margin-top: var(--space-4);
+  }
 }
 
 /* Usar sistema unificado de cajas */
