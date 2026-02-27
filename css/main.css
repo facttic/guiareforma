@@ -1422,24 +1422,28 @@ section[id] {
   margin-bottom: var(--space-6);
 }
 
-/* Flecha visual entre cards en mobile */
+/* Mobile: separar cards con flecha entre ellas */
 @media (max-width: 639px) {
   .antes-despues {
-    gap: var(--space-2);
+    gap: var(--space-4);
+    position: relative;
   }
 
-  .antes-despues .antes-card {
-    margin-bottom: 0;
-  }
-
-  .antes-despues .antes-card::after {
+  .antes-despues::after {
     content: '↓';
     display: block;
     text-align: center;
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
     color: var(--color-ink-muted);
-    padding: var(--space-2) 0;
-    margin-top: var(--space-4);
+    order: 1;
+  }
+
+  .antes-despues .antes-card {
+    order: 0;
+  }
+
+  .antes-despues .despues-card {
+    order: 2;
   }
 }
 
@@ -2235,11 +2239,7 @@ section[id] {
 .cambio-comparacion {
   display: flex;
   align-items: stretch;
-  gap: var(--space-2);
-  background: var(--color-paper-alt);
-  border: 1px dashed var(--color-border);
-  border-radius: var(--radius-sm);
-  padding: var(--space-3);
+  gap: var(--space-3);
   font-size: var(--text-sm);
 }
 
@@ -2249,14 +2249,10 @@ section[id] {
   display: flex;
   flex-direction: column;
   gap: 2px;
-}
-
-.cambio-antes {
-  padding-right: var(--space-2);
-}
-
-.cambio-ahora {
-  padding-left: var(--space-2);
+  padding: var(--space-3);
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
 }
 
 .cambio-label {
@@ -2313,17 +2309,21 @@ section[id] {
 @media (max-width: 640px) {
   .cambio-comparacion {
     flex-direction: column;
-    gap: var(--space-3);
+    gap: var(--space-1);
   }
 
   .cambio-flecha {
     transform: rotate(90deg);
-    padding: var(--space-1) 0;
+    padding: 0;
+    margin: var(--space-1) 0;
   }
 
   .cambio-antes,
   .cambio-ahora {
-    padding: 0;
+    padding: var(--space-2);
+    background: var(--color-paper);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
   }
 }
 
