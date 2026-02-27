@@ -1,0 +1,93 @@
+{
+  "comercio": {
+    "nombre": "Comercio",
+    "convenio": "CCT 130/75",
+    "salarioPromedio": 950000,
+    "sindicato": "SEC (Empleados de Comercio)",
+    "descripcion": "Empleados de comercio minorista y mayorista"
+  },
+  "metalurgico": {
+    "nombre": "Metalúrgico",
+    "convenio": "CCT 260/75",
+    "salarioPromedio": 1200000,
+    "sindicato": "UOM (Unión Obrera Metalúrgica)",
+    "descripcion": "Trabajadores de la industria metalúrgica"
+  },
+  "construccion": {
+    "nombre": "Construcción",
+    "convenio": "CCT 76/75",
+    "salarioPromedio": 1100000,
+    "sindicato": "UOCRA",
+    "descripcion": "Obreros de la construcción"
+  },
+  "gastronomico": {
+    "nombre": "Gastronómico",
+    "convenio": "CCT 389/04",
+    "salarioPromedio": 850000,
+    "sindicato": "UTHGRA",
+    "descripcion": "Trabajadores de hoteles, restaurantes y bares"
+  },
+  "bancario": {
+    "nombre": "Bancario",
+    "convenio": "CCT 18/75",
+    "salarioPromedio": 2800000,
+    "sindicato": "La Bancaria",
+    "descripcion": "Empleados de entidades bancarias y financieras"
+  },
+  "transporte": {
+    "nombre": "Transporte",
+    "convenio": "CCT 40/89",
+    "salarioPromedio": 1500000,
+    "sindicato": "UTA / Camioneros",
+    "descripcion": "Conductores y trabajadores del transporte"
+  },
+  "salud": {
+    "nombre": "Salud",
+    "convenio": "CCT 122/75",
+    "salarioPromedio": 1000000,
+    "sindicato": "FATSA / ATSA",
+    "descripcion": "Trabajadores de sanidad y clínicas privadas"
+  },
+  "educacion": {
+    "nombre": "Educación privada",
+    "convenio": "CCT 88/93",
+    "salarioPromedio": 950000,
+    "sindicato": "SADOP",
+    "descripcion": "Docentes de establecimientos privados"
+  },
+  "informatica": {
+    "nombre": "Informática / Software",
+    "convenio": "Sin CCT específico",
+    "salarioPromedio": 2200000,
+    "sindicato": "Sin representación gremial masiva",
+    "descripcion": "Desarrolladores, analistas, soporte IT"
+  },
+  "textil": {
+    "nombre": "Textil",
+    "convenio": "CCT 500/07",
+    "salarioPromedio": 800000,
+    "sindicato": "AOT (Asociación Obrera Textil)",
+    "descripcion": "Trabajadores de la industria textil"
+  },
+  "alimentacion": {
+    "nombre": "Alimentación",
+    "convenio": "CCT 244/94",
+    "salarioPromedio": 1100000,
+    "sindicato": "STIA",
+    "descripcion": "Trabajadores de la industria alimenticia"
+  },
+  "seguridad": {
+    "nombre": "Seguridad privada",
+    "convenio": "CCT 507/07",
+    "salarioPromedio": 900000,
+    "sindicato": "UPSRA",
+    "descripcion": "Vigiladores y personal de seguridad"
+  },
+  "otros": {
+    "nombre": "Otros sectores",
+    "convenio": "Variable según actividad",
+    "salarioPromedio": 900000,
+    "sindicato": "Según actividad",
+    "descripcion": "Actividades no especificadas"
+  }
+}

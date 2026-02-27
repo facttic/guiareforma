@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Mapa Argentina</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    #map { height: 600px; width: 100%; }
+    .info { padding: 6px 8px; background: white; border-radius: 5px; box-shadow: 0 0 15px rgba(0,0,0,0.2); }
+    .info h4 { margin: 0 0 5px; color: #777; }
+    .legend { line-height: 18px; color: #555; }
+    .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+  </style>
+</head>
+<body>
+  <h1>Test Mapa de Votación - Argentina</h1>
+  <div id="map"></div>
+
+  <script>
+    // Datos de votación
+    const provinciasData = {
+      "Buenos Aires": {favor: 31, contra: 35},
+      "Córdoba": {favor: 15, contra: 3},
+      "Santa Fe": {favor: 15, contra: 8},
+      "Mendoza": {favor: 9, contra: 3},
+      "Tucumán": {favor: 6, contra: 2},
+      "Salta": {favor: 7, contra: 0},
+      "Misiones": {favor: 7, contra: 0},
+      "Santiago del Estero": {favor: 0, contra: 6}
+    };
+
+    // Mapeo de nombres
+    const nombreMapping = {
+      "Tierra del Fuego, Antártida e Islas del Atlántico Sur": "Tierra del Fuego"
+    };
+
+    function getColor(balance) {
+      return balance >= 6  ? '#2166ac' :
+             balance >= 3  ? '#67a9cf' :
+             balance >= 1  ? '#d1e5f0' :
+             balance >= -0.5 ? '#f7f7f7' :
+             balance >= -2 ? '#fddbc7' :
+             balance >= -5 ? '#ef8a62' :
+                             '#b2182b';
+    }
+
+    function getProvinciaData(nombre) {
+      const nombreNormalizado = nombreMapping[nombre] || nombre;
+      return provinciasData[nombreNormalizado] || { favor: 0, contra: 0 };
+    }
+
+    function style(feature) {
+      const data = getProvinciaData(feature.properties.nombre);
+      const balance = data.favor - data.contra;
+      return {
+        fillColor: getColor(balance),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0.7
+      };
+    }
+
+    // Crear mapa
+    var map = L.map('map').setView([-38.5, -64], 4);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Info control
+    var info = L.control();
+    info.onAdd = function(map) {
+      this._div = L.DomUtil.create('div', 'info');
+      this.update();
+      return this._div;
+    };
+    info.update = function(props) {
+      if (props) {
+        const data = getProvinciaData(props.nombre);
+        this._div.innerHTML = '<h4>Votación</h4><b>' + props.nombre + '</b><br>' +
+          data.favor + ' favor / ' + data.contra + ' contra';
+      } else {
+        this._div.innerHTML = '<h4>Votación</h4>Hover sobre provincia';
+      }
+    };
+    info.addTo(map);
+
+    // Cargar GeoJSON
+    fetch('/data/argentina-provincias-new.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log('GeoJSON cargado:', data.features.length);
+
+        var geojson = L.geoJson(data, {
+          style: style,
+          onEachFeature: function(feature, layer) {
+            layer.on({
+              mouseover: function(e) {
+                var layer = e.target;
+                layer.setStyle({weight: 5, color: '#666', dashArray: '', fillOpacity: 0.9});
+                layer.bringToFront();
+                info.update(layer.feature.properties);
+              },
+              mouseout: function(e) {
+                geojson.resetStyle(e.target);
+                info.update();
+              },
+              click: function(e) {
+                map.fitBounds(e.target.getBounds());
+              }
+            });
+          }
+        }).addTo(map);
+
+        console.log('GeoJSON agregado');
+      })
+      .catch(err => console.error('Error:', err));
+  </script>
+</body>
+</html>

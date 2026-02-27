@@ -1,0 +1,263 @@
+/* ==========================================================================
+   Wizard Styles - Navegación paso a paso
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Secciones
+   -------------------------------------------------------------------------- */
+.section[data-step] {
+  display: none;
+  opacity: 0;
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height para mobile */
+  padding-bottom: 120px; /* Espacio para los botones */
+}
+
+.section[data-step].active {
+  display: flex;
+  animation: wizardFadeIn 0.4s ease forwards;
+}
+
+.section[data-step].prev {
+  display: none;
+}
+
+.section[data-step].next {
+  display: none;
+}
+
+@keyframes wizardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Indicador de Progreso
+   -------------------------------------------------------------------------- */
+.wizard-progress {
+  position: fixed;
+  top: 70px; /* Debajo del header */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+.wizard-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  padding: 0;
+}
+
+.wizard-dot:hover {
+  border-color: var(--color-accent);
+  transform: scale(1.2);
+}
+
+.wizard-dot.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: scale(1.2);
+}
+
+.wizard-dot.completed {
+  background: var(--color-positive);
+  border-color: var(--color-positive);
+}
+
+/* Barra de progreso (alternativa a dots para muchos pasos) */
+.wizard-progress-bar {
+  display: none; /* Oculto por defecto, usar dots */
+  width: 100px;
+  height: 4px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.wizard-progress-fill {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: var(--radius-full);
+  transition: width var(--duration-normal) var(--ease-out);
+}
+
+/* Si hay muchos pasos, mostrar barra en vez de dots */
+.wizard-progress:has(.wizard-dot:nth-child(10)) .wizard-dot {
+  display: none;
+}
+
+.wizard-progress:has(.wizard-dot:nth-child(10)) .wizard-progress-bar {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Navegación (botones Anterior/Siguiente)
+   -------------------------------------------------------------------------- */
+.wizard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.wizard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-hand-base);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.wizard-btn svg {
+  flex-shrink: 0;
+}
+
+.wizard-btn-prev {
+  background: var(--color-surface);
+  color: var(--color-ink-light);
+  border: 1px solid var(--color-border);
+}
+
+.wizard-btn-prev:hover {
+  background: var(--color-surface-sunken);
+  color: var(--color-ink);
+}
+
+.wizard-btn-next {
+  background: var(--color-accent);
+  color: white;
+}
+
+.wizard-btn-next:hover {
+  background: var(--color-accent-dark);
+  transform: translateX(4px);
+}
+
+.wizard-btn-restart {
+  background: var(--color-positive);
+  color: white;
+}
+
+.wizard-btn-restart:hover {
+  background: #15803d;
+}
+
+.wizard-step-indicator {
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  font-weight: var(--font-medium);
+}
+
+/* --------------------------------------------------------------------------
+   Hero ajustes para wizard
+   -------------------------------------------------------------------------- */
+.hero-section[data-step] {
+  padding-top: 100px; /* Espacio para progress indicator */
+}
+
+.hero-section[data-step] .scroll-indicator {
+  display: none; /* No mostrar "scroll" en modo wizard */
+}
+
+/* --------------------------------------------------------------------------
+   Mobile adjustments
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .wizard-progress {
+    top: auto;
+    bottom: 80px; /* Arriba de los botones */
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .wizard-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .wizard-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    margin: 0;
+    padding: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 800;
+  }
+
+  .wizard-btn {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--text-sm);
+  }
+
+  .section[data-step] {
+    padding-bottom: 160px; /* Más espacio para nav fijo */
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet+
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .wizard-progress {
+    gap: var(--space-3);
+  }
+
+  .wizard-dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .wizard-btn {
+    padding: var(--space-4) var(--space-6);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .section[data-step].active {
+    animation: none;
+    opacity: 1;
+  }
+
+  .wizard-dot,
+  .wizard-btn,
+  .wizard-progress-fill {
+    transition: none;
+  }
+}
+
+.wizard-btn:focus-visible,
+.wizard-dot:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

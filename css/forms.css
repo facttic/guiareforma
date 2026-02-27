@@ -1,0 +1,298 @@
+/* ==========================================================================
+   Form Styles - Estilo Apuntes
+   ========================================================================== */
+
+.formulario-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+/* Usar sistema unificado de cajas */
+.user-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--box-neutral-bg);
+  border: 1px solid var(--box-neutral-border);
+  border-radius: var(--radius-md);
+  padding: var(--box-padding-lg);
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .user-form {
+    padding: var(--box-padding-md);
+  }
+}
+
+/* Clip decorativo */
+.user-form::before {
+  content: '📋';
+  position: absolute;
+  top: -0.6em;
+  right: var(--space-4);
+  font-size: 1.25rem;
+}
+
+/* Usar sistema unificado (variante positive) */
+.form-privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  background: var(--box-positive-bg);
+  border: 1px dashed var(--box-positive-border);
+  color: var(--color-ink);
+  padding: var(--box-padding-sm);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-5);
+}
+
+.form-privacy svg {
+  flex-shrink: 0;
+  color: var(--color-positive);
+  margin-top: 2px;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+@media (min-width: 480px) {
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--space-2);
+  color: var(--color-ink);
+}
+
+.form-group .optional {
+  color: var(--color-ink-muted);
+  font-weight: var(--font-normal);
+  font-size: var(--text-xs);
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+  padding: var(--box-padding-sm);
+  border: 1px dashed var(--box-neutral-border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  transition: border-color var(--duration-fast), background var(--duration-fast);
+  width: 100%;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-style: solid;
+  border-color: var(--color-accent);
+  background: var(--color-surface-raised);
+}
+
+.form-group input::placeholder {
+  color: var(--color-ink-faint);
+  font-style: italic;
+}
+
+/* Input con unidad */
+.input-with-unit {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-unit input {
+  padding-right: 80px;
+}
+
+.input-with-unit .unit {
+  position: absolute;
+  right: 45px; /* Más espacio para las flechas del input number */
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  pointer-events: none;
+}
+
+.input-with-unit .unit.prefix {
+  position: absolute;
+  left: var(--space-3);
+  right: auto;
+}
+
+.input-with-unit .unit.prefix + input,
+.input-with-unit:has(.unit.prefix) input {
+  padding-left: 36px;
+  padding-right: var(--space-3);
+}
+
+/* Hint */
+.form-hint {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+}
+
+/* Checkbox custom - estilo manuscrito */
+.form-group--checkbox {
+  flex-direction: row;
+  align-items: center;
+  padding: var(--space-2) 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  font-weight: var(--font-normal);
+  font-size: var(--text-sm);
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-ink-muted);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-fast);
+  flex-shrink: 0;
+  background: var(--color-paper);
+}
+
+.checkbox-label input:checked + .checkbox-custom {
+  background: var(--color-highlight-yellow);
+  border-color: var(--color-ink);
+}
+
+/* Check manuscrito */
+.checkbox-label input:checked + .checkbox-custom::after {
+  content: "✓";
+  font-family: var(--font-handwritten);
+  font-size: 1rem;
+  color: var(--color-ink);
+  line-height: 1;
+}
+
+.checkbox-label input:focus-visible + .checkbox-custom {
+  box-shadow: 0 0 0 2px var(--color-highlight-yellow);
+}
+
+/* Form actions */
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px dashed var(--color-border);
+}
+
+.submit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-accent);
+  color: white;
+  padding: var(--space-3) var(--space-5);
+  border: 2px solid var(--color-accent-dark);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-hand-lg);
+  transition: transform var(--duration-fast), background var(--duration-fast);
+}
+
+.submit-button:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.skip-button {
+  background: none;
+  border: none;
+  color: var(--color-ink-muted);
+  font-size: var(--text-hand-base);
+  padding: var(--space-2);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.skip-button:hover {
+  color: var(--color-ink);
+}
+
+/* Botón reset */
+.reset-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  background: none;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  padding: var(--space-2) var(--space-3);
+  margin-top: var(--space-4);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+}
+
+.reset-button:hover {
+  color: var(--color-negative);
+  border-color: var(--color-negative);
+}
+
+.reset-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   Inputs con máscara argentina - formato visual
+   -------------------------------------------------------------------------- */
+.input-currency {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* Estilo para cuando tiene valor */
+.input-currency:not(:placeholder-shown) {
+  font-weight: var(--font-medium);
+}

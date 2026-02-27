@@ -1,0 +1,103 @@
+{
+  "indemnizacion": {
+    "id": "indemnizacion",
+    "titulo": "Indemnización por despido",
+    "articulo": 51,
+    "articuloLCT": 245,
+    "lineaPDF": [821, 870],
+    "antes": {
+      "descripcion": "Sin tope real sobre el salario base",
+      "detalle": "Se calculaba sobre la mejor remuneración mensual, normal y habitual, incluyendo todos los conceptos"
+    },
+    "despues": {
+      "descripcion": "Tope de 3 veces el salario promedio del convenio colectivo",
+      "detalle": "Se excluyen: aguinaldo, vacaciones, premios no mensuales. Mínimo: 67% de la remuneración o 1 mes de sueldo. La indemnización extingue todo reclamo posterior."
+    },
+    "fraseJefe": "Con el nuevo cálculo, tu indemnización baja bastante... es lo que dice la ley.",
+    "accion": "Consultá con tu delegado sindical y pedí que te muestren el cálculo detallado."
+  },
+  "bancoHoras": {
+    "id": "bancoHoras",
+    "titulo": "Banco de horas",
+    "articulo": [42, 43],
+    "articuloLCT": [197, 198],
+    "lineaPDF": [647, 673],
+    "antes": {
+      "descripcion": "Horas extra se pagan 50% más (días hábiles) o 100% más (feriados/fines de semana)",
+      "detalle": "Las horas extraordinarias siempre se pagaban con recargo"
+    },
+    "despues": {
+      "descripcion": "Se pueden compensar con tiempo libre en lugar de pagar",
+      "detalle": "Requiere acuerdo escrito. Descanso mínimo: 12hs entre jornadas, 35hs semanales. Se puede pactar con el sindicato o individualmente."
+    },
+    "fraseJefe": "Las horas extra de esta semana las compensás con días libres el mes que viene.",
+    "accion": "No firmes ningún acuerdo de banco de horas sin leerlo bien. Tenés derecho a negarte."
+  },
+  "huelga": {
+    "id": "huelga",
+    "titulo": "Derecho de huelga",
+    "articulo": 98,
+    "articuloLey": "24 Ley 25.877",
+    "lineaPDF": [1568, 1682],
+    "antes": {
+      "descripcion": "Sin mínimo fijo de servicios durante huelgas",
+      "detalle": "Los servicios mínimos se negociaban caso por caso"
+    },
+    "despues": {
+      "descripcion": "Mínimo 75% en servicios esenciales, 50% en servicios trascendentales",
+      "detalle": "Servicios esenciales: salud, transporte, telecomunicaciones, educación, seguridad. Servicios trascendentales: otros servicios públicos importantes."
+    },
+    "fraseJefe": "Con la nueva ley, el 75% tiene que seguir trabajando durante la huelga.",
+    "accion": "Informate con tu sindicato sobre qué categoría tiene tu trabajo."
+  },
+  "cuotaSindical": {
+    "id": "cuotaSindical",
+    "titulo": "Cuota sindical",
+    "articulo": [37, 137],
+    "articuloLey": ["133 LCT", "38 Ley 23.551"],
+    "lineaPDF": [527, 2392],
+    "antes": {
+      "descripcion": "Descuento automático obligatorio",
+      "detalle": "El empleador retenía la cuota sindical del sueldo automáticamente"
+    },
+    "despues": {
+      "descripcion": "Requiere conformidad expresa del trabajador",
+      "detalle": "El trabajador debe autorizar por escrito que le descuenten la cuota. Puede retirarse en cualquier momento."
+    },
+    "fraseJefe": "La cuota sindical ahora es voluntaria, ¿seguro querés que te la sigan descontando?",
+    "accion": "Pensá bien antes de desafiliarte. El sindicato te representa en paritarias aunque no estés afiliado."
+  },
+  "convenios": {
+    "id": "convenios",
+    "titulo": "Convenios colectivos",
+    "articulo": [131, 132],
+    "articuloLey": "19 Ley 14.250",
+    "lineaPDF": [2269, 2295],
+    "antes": {
+      "descripcion": "Convenio nacional/sectorial prevalece",
+      "detalle": "Los convenios de mayor ámbito protegían a todos los trabajadores del sector"
+    },
+    "despues": {
+      "descripcion": "Convenio de empresa puede prevalecer",
+      "detalle": "Un convenio de empresa puede modificar condiciones del convenio nacional. La ultraactividad puede suspenderse si genera 'distorsiones económicas graves'."
+    },
+    "fraseJefe": "Tenemos nuestro propio convenio de empresa, las condiciones son distintas.",
+    "accion": "Pedí una copia del convenio de empresa y comparalo con el nacional de tu actividad."
+  },
+  "fal": {
+    "id": "fal",
+    "titulo": "Fondo de Asistencia Laboral (FAL)",
+    "articulo": "58-76",
+    "lineaPDF": [1023, 1270],
+    "antes": {
+      "descripcion": "No existía",
+      "detalle": "Las indemnizaciones se pagaban directamente del patrimonio del empleador"
+    },
+    "despues": {
+      "descripcion": "Contribución obligatoria del 3% del salario",
+      "detalle": "El empleador aporta mensualmente a un fondo que cubre indemnizaciones. Carencia de 6 meses. El empleador sigue siendo responsable del pago total."
+    },
+    "fraseJefe": "Ahora aportamos al FAL todos los meses, es un costo extra que tenemos.",
+    "accion": "Verificá que tu empleador esté haciendo los aportes correctamente."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "reforma-laboral-infografia",
+  "version": "1.0.0",
+  "description": "Infografía interactiva sobre la Reforma Laboral Argentina 2026 - FACTTIC",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "d3": "^7.8.5",
+    "scrollama": "^3.2.0",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

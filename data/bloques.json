@@ -1,0 +1,35 @@
+{
+  "diputados": {
+    "favor": [
+      {"bloque": "La Libertad Avanza", "votos": 87, "color": "#7b3fa0"},
+      {"bloque": "PRO", "votos": 12, "color": "#fed500"},
+      {"bloque": "Innovación Federal", "votos": 7, "color": "#4a90d9"},
+      {"bloque": "UCR", "votos": 6, "color": "#e31837"},
+      {"bloque": "Provincias Unidas", "votos": 6, "color": "#17a2b8"},
+      {"bloque": "Otros a favor", "votos": 17, "color": "#6c757d"}
+    ],
+    "contra": [
+      {"bloque": "Unión por la Patria", "votos": 89, "color": "#0099cc"},
+      {"bloque": "Provincias Unidas", "votos": 9, "color": "#17a2b8"},
+      {"bloque": "FIT-Unidad", "votos": 4, "color": "#d62828"},
+      {"bloque": "Elijo Catamarca", "votos": 3, "color": "#ff7b00"},
+      {"bloque": "Coalición Cívica", "votos": 2, "color": "#00a86b"},
+      {"bloque": "Encuentro Federal", "votos": 2, "color": "#9b59b6"},
+      {"bloque": "Otros en contra", "votos": 6, "color": "#6c757d"}
+    ],
+    "ausentes": 3
+  },
+  "senadores": {
+    "favor": [
+      {"bloque": "La Libertad Avanza", "votos": 19, "color": "#7b3fa0"},
+      {"bloque": "UCR", "votos": 10, "color": "#e31837"},
+      {"bloque": "PRO", "votos": 4, "color": "#fed500"},
+      {"bloque": "Otros a favor", "votos": 9, "color": "#6c757d"}
+    ],
+    "contra": [
+      {"bloque": "Unión por la Patria", "votos": 28, "color": "#0099cc"},
+      {"bloque": "Moveré por Santa Cruz", "votos": 2, "color": "#20c997"}
+    ],
+    "ausentes": 0
+  }
+}

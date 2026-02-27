@@ -1,0 +1,634 @@
+/* ==========================================================================
+   Scrollytelling Styles - Estilo Apuntes de Investigación
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Hero Section - Estilo portada de cuaderno
+   -------------------------------------------------------------------------- */
+.hero-section {
+  color: var(--color-ink);
+  min-height: calc(100vh - var(--header-height, 56px));
+  min-height: calc(100dvh - var(--header-height, 56px));
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* El fondo de cuaderno viene del body */
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-6);
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+/* Clip de papel decorativo */
+.hero-content::before {
+  content: '📌';
+  position: absolute;
+  top: -0.6em;
+  left: var(--space-4);
+  font-size: 1.5rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-family: var(--font-handwritten);
+  color: var(--color-accent);
+  font-size: var(--text-hand-base);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+
+.hero-tag {
+  display: inline-block;
+  font-family: var(--font-handwritten);
+  font-size: 0.4em;
+  font-weight: 600;
+  color: var(--color-ink-muted);
+  background: var(--color-highlight-yellow);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+
+.hero-section h1 {
+  color: var(--color-ink);
+  font-size: clamp(1.75rem, 5vw, var(--text-4xl));
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-4);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.hero-section h1 .highlight {
+  background: linear-gradient(180deg, transparent 50%, var(--color-highlight-yellow) 50%);
+  padding: 0 0.1em;
+}
+
+.hero-subtitle {
+  font-size: var(--text-base);
+  color: var(--color-ink-light);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-6);
+  text-align: left;
+}
+
+.hero-subtitle strong {
+  color: var(--color-ink);
+}
+
+/* Hero votación */
+.hero-votacion {
+  margin-bottom: var(--space-4);
+}
+
+/* Disclaimer */
+.hero-disclaimer {
+  font-size: 0.7rem;
+  color: #999;
+  text-align: center;
+  line-height: 1.4;
+  padding: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.votacion-intro {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-sm);
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-2);
+}
+
+.hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  background: var(--color-paper-alt);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.stat-label {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-sm);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.stat-votos {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.votos-favor {
+  color: var(--color-positive);
+  font-weight: var(--font-semibold);
+}
+
+.votos-contra {
+  color: var(--color-ink-muted);
+}
+
+.stat-divider {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .hero-stats {
+    flex-direction: row;
+    gap: var(--space-3);
+  }
+
+  .stat-item {
+    flex: 1;
+  }
+}
+
+/* CTA Button - Estilo anotación */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-accent);
+  color: white;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-handwritten);
+  font-weight: 600;
+  font-size: var(--text-hand-base);
+  text-decoration: none;
+  border: 2px solid var(--color-accent-dark);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.cta-button:hover {
+  background: var(--color-accent-dark);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.cta-button svg {
+  opacity: 0.8;
+}
+
+/* Scroll indicator - Manuscrito */
+.scroll-indicator {
+  position: absolute;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-sm);
+  color: var(--color-ink-muted);
+}
+
+.scroll-arrow {
+  width: 16px;
+  height: 16px;
+  margin: var(--space-2) auto 0;
+  border-right: 2px solid var(--color-ink-muted);
+  border-bottom: 2px solid var(--color-ink-muted);
+  transform: rotate(45deg);
+  animation: scroll-hint 2s ease-in-out infinite;
+}
+
+@keyframes scroll-hint {
+  0%, 100% {
+    opacity: 0.4;
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Timeline Section
+   -------------------------------------------------------------------------- */
+.timeline-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Timeline fallback (sin JS) */
+.timeline-fallback {
+  position: relative;
+  padding-left: var(--space-2xl);
+}
+
+.timeline-fallback::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-primary);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: var(--space-2xl);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-2xl) - 6px);
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 3px solid var(--color-bg-alt);
+}
+
+.timeline-date {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-content h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-content p {
+  color: var(--color-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Mapa Section
+   -------------------------------------------------------------------------- */
+.mapa-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+.mapa-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mapa-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.mapa-toggle {
+  padding: var(--space-sm) var(--space-lg);
+  border: 2px solid var(--color-border);
+  background: white;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mapa-toggle:hover {
+  border-color: var(--color-primary);
+}
+
+.mapa-toggle.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+
+.mapa-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-sm);
+}
+
+.mapa-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.highlight-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+}
+
+.highlight-card.favor {
+  background: rgba(5, 113, 176, 0.1);
+  border: 1px solid var(--color-favor);
+}
+
+.highlight-card.contra {
+  background: rgba(202, 0, 32, 0.1);
+  border: 1px solid var(--color-contra);
+}
+
+.highlight-icon {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+.highlight-card.favor .highlight-icon {
+  color: var(--color-favor);
+}
+
+.highlight-card.contra .highlight-icon {
+  color: var(--color-contra);
+}
+
+/* --------------------------------------------------------------------------
+   Bloques Section
+   -------------------------------------------------------------------------- */
+.bloques-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+.bloques-container {
+  width: 100%;
+}
+
+.bloques-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-5);
+}
+
+.bloques-tab {
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.bloques-tab:hover {
+  color: var(--color-text);
+}
+
+.bloques-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Cambio Sections (sticky scrollytelling)
+   -------------------------------------------------------------------------- */
+.cambio-section {
+  padding: var(--space-12) 0;
+  /* El fondo de cuaderno viene del body */
+}
+
+.cambio-articulo {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  margin-top: var(--space-2);
+}
+
+.cambio-content {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* Sticky container for scrollytelling effect */
+.sticky-container {
+  /* Para futuro uso con Scrollama */
+}
+
+/* --------------------------------------------------------------------------
+   Formulario Section
+   -------------------------------------------------------------------------- */
+.formulario-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+/* --------------------------------------------------------------------------
+   Otros Section
+   -------------------------------------------------------------------------- */
+.otros-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+/* --------------------------------------------------------------------------
+   Conclusion Section
+   -------------------------------------------------------------------------- */
+.conclusion-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+/* --------------------------------------------------------------------------
+   Votación Section (Anexo)
+   -------------------------------------------------------------------------- */
+.votacion-section {
+  /* El fondo de cuaderno viene del body */
+}
+
+.votacion-section .section-number {
+  background: #64748b;
+  color: white;
+}
+
+.votacion-timeline,
+.votacion-mapa,
+.votacion-bloques {
+  margin-bottom: var(--space-8);
+  padding: var(--space-5);
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.votacion-timeline h3,
+.votacion-mapa h3,
+.votacion-bloques h3 {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-lg);
+  margin-bottom: var(--space-4);
+  color: var(--color-ink);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.votacion-intro {
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+/* Timeline compacto */
+.timeline-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .timeline-compact {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.timeline-step {
+  flex: 1;
+  text-align: center;
+  padding: var(--space-4);
+  background: var(--color-surface-raised);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+.timeline-step:last-of-type {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .timeline-step {
+    border-bottom: none;
+    border-right: 1px solid var(--color-border);
+  }
+
+  .timeline-step:last-of-type {
+    border-right: none;
+  }
+}
+
+.step-date {
+  display: inline-block;
+  font-size: var(--text-xs);
+  color: white;
+  background: var(--color-accent);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.step-title {
+  display: block;
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  margin-bottom: var(--space-1);
+}
+
+.step-detail {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-ink-muted);
+}
+
+.timeline-arrow {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Scroll Progress Indicator (opcional)
+   -------------------------------------------------------------------------- */
+.scroll-progress {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--color-primary);
+  z-index: 999;
+  transition: width 100ms linear;
+}
+
+/* --------------------------------------------------------------------------
+   Section Transitions (Scrollama)
+   -------------------------------------------------------------------------- */
+.section[data-active="false"] .section-header,
+.section[data-active="false"] .cambio-content {
+  opacity: 0.3;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.section[data-active="true"] .section-header,
+.section[data-active="true"] .cambio-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+/* Animaciones de entrada */
+.animate-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger delay para elementos múltiples */
+.animate-in:nth-child(1) { animation-delay: 0.1s; }
+.animate-in:nth-child(2) { animation-delay: 0.2s; }
+.animate-in:nth-child(3) { animation-delay: 0.3s; }
+.animate-in:nth-child(4) { animation-delay: 0.4s; }

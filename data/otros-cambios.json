@@ -1,0 +1,37 @@
+{
+  "periodoPrueba": {
+    "id": "periodoPrueba",
+    "titulo": "Período de prueba",
+    "antes": "3 meses",
+    "despues": "6 meses",
+    "detalle": "Durante este período te pueden despedir sin indemnización ni causa. No pueden contratarte dos veces en período de prueba."
+  },
+  "blanqueo": {
+    "id": "blanqueo",
+    "titulo": "Blanqueo laboral",
+    "antes": "Sin programa vigente",
+    "despues": "Condonación del 70% de deudas",
+    "detalle": "Los empleadores pueden regularizar trabajadores no registrados con extinción de multas, baja del REPSAL, y cómputo de hasta 60 meses de aportes para el trabajador."
+  },
+  "rifl": {
+    "id": "rifl",
+    "titulo": "Incentivos a la formalización (RIFL)",
+    "antes": "Sin incentivos especiales",
+    "despues": "Reducción de cargas por 1 año",
+    "detalle": "Reducción de contribuciones patronales para nuevas contrataciones formales durante un año."
+  },
+  "licencias": {
+    "id": "licencias",
+    "titulo": "Licencias por enfermedad (Art. 44)",
+    "antes": "100% del salario",
+    "despues": "ELIMINADO en Diputados",
+    "detalle": "El artículo que reducía el pago al 50-75% fue eliminado para conseguir votos. Se mantiene el 100% del salario durante licencias."
+  },
+  "asambleas": {
+    "id": "asambleas",
+    "titulo": "Crédito horario delegados",
+    "antes": "Según convenio",
+    "despues": "Máximo 10hs mensuales",
+    "detalle": "Los delegados tienen hasta 10 horas mensuales pagas para ejercer sus funciones, sin interrumpir las actividades del área."
+  }
+}

@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reforma Laboral 2026: Lo que cambia para vos | FACTTIC</title>
+  <meta name="description" content="Guía interactiva de FACTTIC sobre la Reforma Laboral Argentina 2026. Calculá cómo te afecta según tu situación.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Reforma Laboral 2026: Lo que cambia para vos">
+  <meta property="og:description" content="Somos cooperativistas, pero antes fuimos trabajadores. Esto es lo que necesitás saber sobre la reforma laboral.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reforma Laboral 2026 | FACTTIC">
+  <meta name="twitter:description" content="Guía interactiva: calculá cómo te afecta la reforma laboral según tu situación.">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/scrolly.css">
+  <link rel="stylesheet" href="/css/forms.css">
+  <link rel="stylesheet" href="/css/wizard.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Preconnect para fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Skip link para accesibilidad -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header FACTTIC -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="https://facttic.org.ar" class="facttic-logo" target="_blank" rel="noopener">
+          <span class="logo-text">FACTTIC</span>
+        </a>
+        <nav class="header-nav" aria-label="Enlaces externos">
+          <ul class="nav-list nav-list-simple">
+            <li><a href="https://facttic.org.ar" target="_blank" rel="noopener">facttic.org.ar</a></li>
+            <li><a href="https://twitter.com/facttic" target="_blank" rel="noopener">Twitter</a></li>
+            <li><a href="https://github.com/facttic" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- SECCIÓN 0: Hero -->
+    <section id="hero" class="section hero-section" data-step="0" data-step-title="Inicio" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">FACTTIC</div>
+          <h1 id="hero-title">Reforma Laboral 2026 <span class="hero-tag">Guía Interactiva</span></h1>
+          <p class="hero-subtitle">Una lectura y apuntes de la reforma laboral por parte de las cooperativas tecnológicas argentinas.</p>
+
+          <div class="hero-votacion">
+            <p class="votacion-intro">La ley se aprobó así:</p>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-label">Diputados</span>
+                <span class="stat-votos">
+                  <span class="votos-favor">135 a favor</span>
+                  <span class="votos-contra">115 en contra</span>
+                </span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Senadores</span>
+                <span class="stat-votos">
+                  <span class="votos-favor">42 a favor</span>
+                  <span class="votos-contra">30 en contra</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-disclaimer">
+            <p><strong>Aviso importante:</strong> Este material es de carácter informativo y educativo. No constituye asesoramiento legal ni reemplaza la consulta con profesionales. FACTTIC no se responsabiliza por decisiones tomadas en base a esta información.</p>
+            <p>Para tu situación específica, consultá con tu <strong>sindicato</strong>, <strong>delegado/a</strong> o un/a <strong>abogado/a laboralista</strong>.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Ver los cambios</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: Formulario de Personalización -->
+    <section id="formulario" class="section formulario-section" data-step="1" data-step-title="Tus datos" aria-labelledby="form-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">01</span>
+          <h2 id="form-title">Personalizá la información</h2>
+          <p class="section-intro">Ingresá tus datos para ver cómo te afecta específicamente a vos. <strong>Tus datos no se guardan ni se envían a ningún lado.</strong></p>
+        </header>
+
+        <form id="user-form" class="user-form" aria-describedby="form-privacy">
+          <p id="form-privacy" class="form-privacy">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+            </svg>
+            Todo se calcula en tu navegador. Privacidad total.
+          </p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nombre">Tu nombre <span class="optional">(opcional)</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Para personalizar los textos">
+            </div>
+
+            <div class="form-group">
+              <label for="sector">Sector o rubro</label>
+              <select id="sector" name="sector" required>
+                <option value="">Elegí tu sector...</option>
+                <option value="comercio">Comercio</option>
+                <option value="metalurgico">Metalúrgico / Industria</option>
+                <option value="construccion">Construcción</option>
+                <option value="gastronomico">Gastronomía / Hotelería</option>
+                <option value="bancario">Bancario / Finanzas</option>
+                <option value="transporte">Transporte</option>
+                <option value="salud">Salud</option>
+                <option value="educacion">Educación privada</option>
+                <option value="informatica">Informática / Software</option>
+                <option value="textil">Textil</option>
+                <option value="alimentacion">Alimentación</option>
+                <option value="seguridad">Seguridad privada</option>
+                <option value="otros">Otro sector</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="antiguedad">Antigüedad en tu trabajo actual</label>
+              <div class="input-with-unit">
+                <input type="number" id="antiguedad" name="antiguedad" min="0" max="50" placeholder="0" required>
+                <span class="unit">años</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="salario">Salario básico mensual</label>
+              <div class="input-with-unit">
+                <span class="unit prefix">$</span>
+                <input type="number" id="salario" name="salario" min="0" step="1000" placeholder="800000" required>
+              </div>
+              <small class="form-hint">Solo el básico de recibo, sin extras</small>
+            </div>
+
+            <div class="form-group">
+              <label for="variables">Extras mensuales <span class="optional">(promedio)</span></label>
+              <div class="input-with-unit">
+                <span class="unit prefix">$</span>
+                <input type="number" id="variables" name="variables" min="0" step="1000" placeholder="0">
+              </div>
+              <small class="form-hint">Comisiones, premios, horas extra habituales</small>
+            </div>
+
+            <div class="form-group">
+              <label for="horas">Horas de trabajo por día</label>
+              <div class="input-with-unit">
+                <input type="number" id="horas" name="horas" min="1" max="24" placeholder="8" required>
+                <span class="unit">hs</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="tipo-empresa">Tamaño de tu empresa</label>
+              <select id="tipo-empresa" name="tipo-empresa">
+                <option value="grande">Empresa grande (+100 empleados)</option>
+                <option value="pyme">PyME (menos de 100 empleados)</option>
+                <option value="nosabe">No sé</option>
+              </select>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" id="afiliado" name="afiliado">
+                <span class="checkbox-custom"></span>
+                <span>Estoy afiliado a un sindicato</span>
+              </label>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" id="convenio" name="convenio">
+                <span class="checkbox-custom"></span>
+                <span>Mi empresa tiene convenio colectivo</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-button">
+              Ver cómo me afecta
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button" class="skip-button" id="skip-form">
+              Continuar sin personalizar
+            </button>
+          </div>
+          <button type="button" class="reset-button" id="reset-form" hidden>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
+            </svg>
+            Borrar mis datos guardados
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2-7: Los 6 Cambios Principales -->
+    <div id="cambios" aria-label="Cambios principales de la reforma">
+
+      <!-- CAMBIO 1: Indemnización -->
+      <section id="indemnizacion" class="section cambio-section" data-step="2" data-step-title="Indemnización" data-cambio="indemnizacion" aria-labelledby="cambio-indemnizacion-title">
+        <div class="sticky-container">
+          <div class="container">
+            <header class="section-header">
+              <span class="section-number">02</span>
+              <h2 id="cambio-indemnizacion-title">Indemnización por despido</h2>
+              <p class="section-intro cambio-articulo">Arts. 51, 48 → Modifican Arts. 245, 231 LCT</p>
+              <a href="#" class="ver-ley-link" data-ley="indemnizacion">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                Ver texto de la ley
+              </a>
+            </header>
+
+            <div class="cambio-content">
+              <!-- Contexto: Ley de Bases 2024 (primero para dar contexto) -->
+              <div class="contexto-ley-bases">
+                <h4>Primero, lo que ya cambió con la Ley de Bases (2024)</h4>
+                <p class="contexto-intro">Antes de esta reforma, la <strong>Ley 27.742</strong> (julio 2024) ya había modificado las indemnizaciones:</p>
+                <ul class="contexto-lista">
+                  <li><strong>Tope a tu indemnización:</strong> Si ganás mucho más que el sueldo promedio de tu actividad (por ejemplo, comercio o metalúrgicos), te calculan la indemnización como si ganaras solo 3 veces ese promedio.</li>
+                  <li><strong>Piso mínimo:</strong> Aunque te apliquen el tope, no te pueden pagar menos de dos tercios de lo que te correspondería, ni menos de 1 mes de sueldo.</li>
+                  <li><strong>Período de prueba más largo:</strong> Pasó de 3 a 6 meses. Durante ese tiempo te pueden despedir sin pagarte indemnización.</li>
+                  <li><strong>Si te despiden por discriminación:</strong> Por ejemplo, por embarazo, actividad sindical o identidad de género. Te pagan 50-100% más, pero ya no pueden obligar a que te reincorporen. Solo te pagan y listo.</li>
+                  <li><strong>Menos multas al empleador:</strong> Si te tenían sin registrar o te pagaban fuera de término, antes el empleador tenía que pagarte multas extra (25-50% más). Eso se eliminó.</li>
+                  <li><strong>Firmás y no reclamás más:</strong> Una vez que cobrás la indemnización, no podés ir a la justicia a pedir diferencias ni compensación por daños. Salvo que haya un delito penal de por medio.</li>
+                </ul>
+              </div>
+
+              <div class="antes-despues">
+                <div class="antes-card">
+                  <h3>ANTES (pre-2024)</h3>
+                  <p class="descripcion">1 mes de sueldo por cada año trabajado</p>
+                  <p class="detalle">Se calculaba sobre tu mejor sueldo del año, sumando todo: aguinaldo, vacaciones, premios, comisiones. Sin límite.</p>
+                </div>
+                <div class="despues-card">
+                  <h3>AHORA (con esta reforma)</h3>
+                  <p class="descripcion">1 mes por año, pero sobre un sueldo "recortado"</p>
+                  <p class="detalle">Ya no cuentan: aguinaldo, vacaciones ni premios anuales. Y hay un tope máximo según tu actividad.</p>
+                </div>
+              </div>
+
+              <!-- Lo que cambia - Cards con explicación + ANTES/AHORA -->
+              <div class="cambios-cards">
+                <h4 class="cambios-titulo">Lo que cambia con esta reforma</h4>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">💰</span>
+                    <span class="cambio-titulo">Aguinaldo, vacaciones y premios anuales</span>
+                  </div>
+                  <p class="cambio-explicacion"><mark class="rough-highlight">Ya no cuentan</mark> para calcular tu indemnización. Antes muchos jueces los incluían, ahora queda escrito en la ley que no van.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Contaban en el cálculo</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">No cuentan</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">📅</span>
+                    <span class="cambio-titulo">Requisito de 6 meses</span>
+                  </div>
+                  <p class="cambio-explicacion">Para que un concepto entre en el cálculo, tenés que haberlo cobrado <mark class="rough-highlight">al menos 6 de los últimos 12 meses</mark>. ¿Te aumentaron hace 5 meses? Ese aumento no cuenta.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Si lo cobrabas, contaba</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Mínimo 6 meses</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🔄</span>
+                    <span class="cambio-titulo">Antigüedad si volvés a la empresa</span>
+                  </div>
+                  <p class="cambio-explicacion">Si te fuiste de una empresa (por cualquier motivo) y volvés después de 3 años, tu antigüedad anterior <mark class="rough-highlight">no se suma</mark>. Arrancás de cero.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Se sumaba siempre</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">3+ años = reset</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">📊</span>
+                    <span class="cambio-titulo">Comisiones y horas extra</span>
+                  </div>
+                  <p class="cambio-explicacion">Antes se usaba tu mejor mes. Ahora se usa <mark class="rough-highlight">el promedio</mark> de los últimos 6 o 12 meses.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Tu mejor mes</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Promedio</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">⏳</span>
+                    <span class="cambio-titulo">Pago en cuotas si vas a juicio</span>
+                  </div>
+                  <p class="cambio-explicacion">Si ganás un juicio laboral, la empresa puede pagarte en cuotas: <mark class="rough-highlight">hasta 12 cuotas</mark> en PyMEs. Se ajustan por inflación (IPC) más un 3% anual.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Pago de una</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Hasta 12 cuotas</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🚪</span>
+                    <span class="cambio-titulo">Sin preaviso en período de prueba</span>
+                  </div>
+                  <p class="cambio-explicacion">Si estás en período de prueba (ahora son 6 meses), <mark class="rough-highlight">te pueden echar de un día para el otro</mark>. Antes te tenían que avisar con 15 días.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">15 días de aviso</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Sin aviso</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="cambios-nota"><strong>Ojo:</strong> Si te despiden después de que entre en vigencia esta ley, te aplican el nuevo cálculo aunque te hayan contratado hace años.</p>
+              </div>
+
+              <div id="calc-indemnizacion" class="calculadora" aria-label="Calculadora de indemnización personalizada">
+                <div class="calc-personalizada" hidden>
+                  <!-- Contenido generado por JS -->
+                </div>
+              </div>
+
+              <div class="frase-jefe">
+                <h4>Lo que podrían decirte</h4>
+                <blockquote>Mirá, con la nueva ley el cálculo es más simple y transparente. Esto es lo que te corresponde, está todo en regla.</blockquote>
+                <p class="frase-nota">Antes de firmar, pedí que te expliquen el cálculo. Una vez que cobrás, no podés reclamar más.</p>
+              </div>
+
+              <div class="que-hacer">
+                <h4>¿Qué podés hacer?</h4>
+                <ul>
+                  <li>Pedí el detalle del cálculo por escrito antes de firmar cualquier cosa.</li>
+                  <li>Revisá que estén sumando tus comisiones, horas extra y otros extras que cobrás todos los meses.</li>
+                  <li>Si tenés dudas, hablá con tu delegado, tu sindicato, o un abogado laboralista antes de cobrar.</li>
+                  <li>Guardá tus últimos 12 recibos de sueldo como respaldo.</li>
+                </ul>
+              </div>
+
+              <!-- Adelanto FAL -->
+              <div class="adelanto-seccion">
+                <p class="adelanto-intro">Pero hay más...</p>
+                <p class="adelanto-texto">La reforma también crea el <strong>Fondo de Cese Laboral (FAL)</strong>: un sistema donde el empleador aporta mensualmente a un fondo, y cuando te despiden la indemnización puede salir de ahí.</p>
+                <p class="adelanto-link">Te lo explicamos a continuación →</p>
+              </div>
+
+              <p class="contexto-nota" style="margin-top: var(--space-4); text-align: center;">En conjunto, Ley de Bases (2024) + esta reforma (2026) representan el mayor cambio en derechos laborales desde 1976.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAMBIO 2: Fondo de Cese Laboral (FAL) -->
+      <section id="fal" class="section cambio-section" data-step="3" data-step-title="FAL" data-cambio="fal" aria-labelledby="cambio-fal-title">
+        <div class="sticky-container">
+          <div class="container">
+            <header class="section-header">
+              <span class="section-number">03</span>
+              <h2 id="cambio-fal-title">Fondo de Cese Laboral (FAL)</h2>
+              <p class="section-intro cambio-articulo">Arts. 58-76</p>
+              <a href="#" class="ver-ley-link" data-ley="fal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                Ver texto de la ley
+              </a>
+            </header>
+
+            <div class="cambio-content">
+              <!-- Contexto Ley de Bases -->
+              <div class="contexto-ley-bases">
+                <h4>Contexto: Ley de Bases (2024)</h4>
+                <p>La Ley de Bases 27.742 permitió que sindicatos y empresas acuerden crear fondos para pagar indemnizaciones (como el que ya existía en construcción). Pero no obligó a nadie a hacerlo.</p>
+              </div>
+
+              <div class="antes-despues">
+                <div class="antes-card">
+                  <h3>ANTES</h3>
+                  <p class="descripcion">Indemnización directa</p>
+                  <p class="detalle">Al despedirte, el empleador te pagaba la indemnización de su bolsillo, en el momento.</p>
+                </div>
+                <div class="despues-card">
+                  <h3>AHORA</h3>
+                  <p class="descripcion">Fondo financiero</p>
+                  <p class="detalle">El empleador aporta todos los meses a un fondo que manejan bancos y financieras. Si te despiden, tu indemnización puede salir de ahí.</p>
+                </div>
+              </div>
+
+              <h4 class="cambios-titulo">Lo que cambia con el FAL</h4>
+              <div class="cambios-cards">
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">💰</span>
+                    <span class="cambio-titulo">Sale de tu jubilación</span>
+                  </div>
+                  <p class="cambio-explicacion">Cada mes tu empleador paga plata a ANSES para las jubilaciones. Ahora, parte de esa plata <mark class="rough-highlight">va al FAL en vez de jubilaciones</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Todo a jubilaciones</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Parte al FAL</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🏦</span>
+                    <span class="cambio-titulo">Lo manejan privados</span>
+                  </div>
+                  <p class="cambio-explicacion">El FAL lo administran <mark class="rough-highlight">bancos y financieras privadas</mark>. Cobran comisiones por manejarlo (hasta 1%). Es parecido a las AFJP.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Sin intermediarios</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Entidades financieras</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">📅</span>
+                    <span class="cambio-titulo">Requisitos para que te cubra</span>
+                  </div>
+                  <p class="cambio-explicacion">El FAL solo te cubre si tenés <mark class="rough-highlight">más de un año registrado</mark> en esa empresa y tu empleador aportó al menos 6 meses. Si no, el fondo no paga.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Te pagaban siempre</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">12 meses vos + 6 meses fondo</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">📝</span>
+                    <span class="cambio-titulo">Solo cubre lo registrado</span>
+                  </div>
+                  <p class="cambio-explicacion">Si cobrás parte del sueldo sin registrar (sin recibo), <mark class="rough-highlight">esa parte no cuenta</mark>. El fondo solo cubre lo que figura en tu recibo.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Se calculaba todo</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Solo registrado</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🎯</span>
+                    <span class="cambio-titulo">Quién decide usarlo</span>
+                  </div>
+                  <p class="cambio-explicacion">Cuando te despiden, <mark class="rough-highlight">tu empleador decide</mark> si usa la plata del FAL o si prefiere pagarte de su bolsillo. Vos no decidís nada.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Te pagaba directo</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Él elige</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="cambios-nota"><strong>Importante:</strong> Si el fondo no alcanza, el empleador sigue siendo responsable de pagarte la diferencia. El monto de tu indemnización no cambia, solo cambia de dónde sale.</p>
+
+              <div class="frase-jefe">
+                <h4>Lo que podrían decirte</h4>
+                <blockquote>Tranquilo, ahora aportamos al FAL todos los meses. Es plata que estamos guardando para cuando te vayas.</blockquote>
+                <p class="frase-nota">No es plata "tuya". Es una cuenta de la empresa, y tu empleador decide si la usa o no cuando te despide. Además, esa plata sale de lo que antes iba a las jubilaciones de todos.</p>
+              </div>
+
+              <div class="que-hacer">
+                <h4>¿Qué podés hacer?</h4>
+                <ul>
+                  <li>Revisá tu recibo de sueldo. Si te pagan algo "por afuera", eso no entra en el FAL.</li>
+                  <li>Si te despiden, pedí el cálculo detallado. Lo que te corresponde de indemnización no cambia, solo cambia de dónde sale la plata.</li>
+                  <li>Si el FAL no alcanza para cubrir todo, tu empleador tiene que poner la diferencia de su bolsillo.</li>
+                  <li>Ante cualquier duda, consultá con tu delegado o sindicato.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAMBIO 3: Banco de Horas -->
+      <section id="banco-horas" class="section cambio-section" data-step="4" data-step-title="Banco de horas" data-cambio="bancoHoras" aria-labelledby="cambio-banco-title">
+        <div class="sticky-container">
+          <div class="container">
+            <header class="section-header">
+              <span class="section-number">04</span>
+              <h2 id="cambio-banco-title">Banco de horas</h2>
+              <p class="section-intro cambio-articulo">Arts. 42-43 → Modifican Arts. 197-198 LCT</p>
+              <a href="#" class="ver-ley-link" data-ley="bancoHoras">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                Ver texto de la ley
+              </a>
+            </header>
+
+            <div class="cambio-content">
+              <!-- Contexto Ley de Bases -->
+              <div class="contexto-ley-bases">
+                <h4>Contexto: Ley de Bases (2024)</h4>
+                <p>La Ley de Bases permitió que los convenios colectivos establezcan jornadas flexibles y banco de horas, pero solo por acuerdo entre sindicatos y empresas. No cambiaba nada para trabajadores individuales.</p>
+              </div>
+
+              <div class="antes-despues">
+                <div class="antes-card">
+                  <h3>ANTES</h3>
+                  <p class="descripcion">Horas extra = plata extra</p>
+                  <p class="detalle">Si trabajabas de más, te pagaban 50% extra en días de semana, 100% extra en fines de semana y feriados. Siempre en plata.</p>
+                </div>
+                <div class="despues-card">
+                  <h3>AHORA</h3>
+                  <p class="descripcion">Horas extra = pueden ser tiempo libre</p>
+                  <p class="detalle">Tu empleador puede proponerte cambiar las horas extra por tiempo libre en vez de pagártelas. Requiere que firmes un acuerdo.</p>
+                </div>
+              </div>
+
+              <h4 class="cambios-titulo">Lo que cambia con el banco de horas</h4>
+              <div class="cambios-cards">
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">💸</span>
+                    <span class="cambio-titulo">Horas extra sin pago</span>
+                  </div>
+                  <p class="cambio-explicacion">Si firmás un acuerdo de banco de horas, las horas extra que trabajes pueden compensarse con <mark class="rough-highlight">tiempo libre en vez de plata</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Siempre en plata</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Puede ser tiempo libre</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">📅</span>
+                    <span class="cambio-titulo">Jornada promedio</span>
+                  </div>
+                  <p class="cambio-explicacion">La jornada ya no se mide día a día, sino como <mark class="rough-highlight">promedio mensual, trimestral o anual</mark>. Podés trabajar 10 horas un día y 6 otro, mientras el promedio no pase de 8.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">8hs por día, 48 por semana</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Promedio mensual/anual</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">✍️</span>
+                    <span class="cambio-titulo">Requiere tu firma</span>
+                  </div>
+                  <p class="cambio-explicacion">El acuerdo tiene que ser por escrito y voluntario. <mark class="rough-highlight">En la práctica, si no firmás puede haber presiones</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">No existía</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Acuerdo escrito</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">⏰</span>
+                    <span class="cambio-titulo">Jornada diaria más larga</span>
+                  </div>
+                  <p class="cambio-explicacion">El único límite ahora es descansar 12 horas entre jornada y jornada. Podrías <mark class="rough-highlight">trabajar hasta 12 horas en un día</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Máximo 8hs/día</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Hasta 12hs/día</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🏖️</span>
+                    <span class="cambio-titulo">Vacaciones fraccionadas</span>
+                  </div>
+                  <p class="cambio-explicacion">Tus vacaciones ahora pueden dividirse en períodos de mínimo 7 días. <mark class="rough-highlight">El empleador tiene más poder para fragmentar tu descanso</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Vacaciones completas</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Mínimo 7 días por tramo</span>
+                    </div>
+                  </div>
+                  <p class="cambio-nota-inline"><strong>Protección:</strong> Al menos una vez cada 3 años, tienen que darte vacaciones en verano.</p>
+                </div>
+              </div>
+
+              <p class="cambios-nota"><strong>Importante:</strong> Si dependés de las horas extra para llegar a fin de mes, el banco de horas te puede afectar el bolsillo. Cobrás "tiempo libre" en vez de plata. Los descansos mínimos (12hs entre jornadas, 35hs semanales) se mantienen.</p>
+
+              <div class="frase-jefe">
+                <h4>Lo que podrían decirte</h4>
+                <blockquote>No te preocupes, después lo recuperás con horas libres más adelante, cuando esté todo más tranqui.</blockquote>
+                <p class="frase-nota">Eso significa que no te van a pagar el 50% o 100% extra. Te dan tiempo libre en vez de plata. Pensá si te conviene antes de aceptar.</p>
+              </div>
+
+              <div class="que-hacer">
+                <h4>¿Qué podés hacer?</h4>
+                <ul>
+                  <li>No firmes ningún acuerdo de banco de horas sin leerlo completo.</li>
+                  <li>Tenés derecho a negarte. El acuerdo tiene que ser voluntario.</li>
+                  <li>Si te presionan para firmar, consultá con tu delegado o sindicato.</li>
+                  <li>Llevá un registro propio de las horas que trabajás por si hay diferencias.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAMBIO 3: Derecho de Huelga -->
+      <section id="huelga" class="section cambio-section" data-step="5" data-step-title="Huelga" data-cambio="huelga" aria-labelledby="cambio-huelga-title">
+        <div class="sticky-container">
+          <div class="container">
+            <header class="section-header">
+              <span class="section-number">05</span>
+              <h2 id="cambio-huelga-title">Derecho de huelga</h2>
+              <p class="section-intro cambio-articulo">Art. 98 → Modifica Art. 24 Ley 25.877</p>
+              <a href="#" class="ver-ley-link" data-ley="huelga">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                Ver texto de la ley
+              </a>
+            </header>
+
+            <div class="cambio-content">
+              <!-- Contexto: esto NO viene de Ley de Bases -->
+              <div class="contexto-ley-bases">
+                <h4>Esto es nuevo de 2026</h4>
+                <p>La Ley de Bases (2024) no tocó el derecho de huelga. Esta reforma sí lo limita: en muchos sectores, la mayoría de los trabajadores tiene que seguir trabajando aunque haya paro.</p>
+              </div>
+
+              <div class="antes-despues">
+                <div class="antes-card">
+                  <h3>ANTES</h3>
+                  <p class="descripcion">Se negociaba cuántos trabajaban</p>
+                  <p class="detalle">El sindicato y la empresa acordaban cuánta gente seguía trabajando durante el paro. La mitad podía parar.</p>
+                </div>
+                <div class="despues-card">
+                  <h3>AHORA</h3>
+                  <p class="descripcion">Solo 1 de cada 4 puede parar</p>
+                  <p class="detalle">En "servicios esenciales", 3 de cada 4 trabajadores tienen que seguir trabajando. No se negocia.</p>
+                </div>
+              </div>
+
+              <h4 class="cambios-titulo">Lo que cambia en el derecho de huelga</h4>
+              <div class="cambios-cards">
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">✊</span>
+                    <span class="cambio-titulo">Menos gente puede parar</span>
+                  </div>
+                  <p class="cambio-explicacion">Si tu trabajo es "servicio esencial", <mark class="rough-highlight">3 de cada 4 tienen que seguir trabajando</mark>. Solo 1 de cada 4 puede hacer paro.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">La mitad podía parar</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Solo 1 de cada 4</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">📋</span>
+                    <span class="cambio-titulo">Muchos trabajos ahora son "esenciales"</span>
+                  </div>
+                  <p class="cambio-explicacion">Antes eran pocos: hospitales, agua, luz. Ahora agregaron <mark class="rough-highlight">docentes, recolectores, seguridad, internet, bancos, supermercados</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">5 sectores</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">17 sectores</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">⚖️</span>
+                    <span class="cambio-titulo">Pueden agregar más</span>
+                  </div>
+                  <p class="cambio-explicacion">Una comisión de 5 personas puede declarar <mark class="rough-highlight">cualquier trabajo como "esencial"</mark>. La lista puede crecer.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Lista fija en la ley</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Se puede ampliar</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🗣️</span>
+                    <span class="cambio-titulo">Delegados con menos tiempo</span>
+                  </div>
+                  <p class="cambio-explicacion">Los delegados ahora tienen <mark class="rough-highlight">tope de 10 horas mensuales</mark> para actividades sindicales. No pueden "interrumpir las actividades normales".</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Según convenio</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Máximo 10hs/mes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="servicios-lista">
+                <h4>¿Tu trabajo está en la lista?</h4>
+                <p class="servicios-intro"><strong>Esenciales</strong> (solo 1 de cada 4 trabajadores/as puede parar):</p>
+                <div class="servicios-grid">
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Guarderías, jardines, escuelas primarias y secundarias, educación especial</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Hospitales, clínicas, farmacias, transporte de medicamentos</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Agua, luz, gas, petróleo, combustibles</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Telecomunicaciones, internet, comunicaciones satelitales</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Recolección de residuos</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Aviación comercial, aeropuertos, control de tráfico aéreo</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Puertos (estibadores, remolques, dragado, amarre)</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Transporte de caudales</span>
+                  </div>
+                  <div class="servicio-item esencial">
+                    <span class="servicio-badge">Esencial</span>
+                    <span>Seguridad privada y custodia</span>
+                  </div>
+                </div>
+                <p class="servicios-intro"><strong>Trascendentales</strong> (1 de cada 2 trabajadores/as puede parar):</p>
+                <div class="servicios-grid">
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Colectivos, trenes, subtes, camiones de carga</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Transporte marítimo y fluvial, operaciones costa afuera</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Aduanas, migraciones, comercio exterior</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Producción de medicamentos e insumos hospitalarios</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Radio y televisión</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Siderurgia, aluminio, química, cementeras</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Industria alimenticia (toda la cadena)</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Bancos, financieras, hoteles, gastronomía, e-commerce</span>
+                  </div>
+                  <div class="servicio-item trascendental">
+                    <span class="servicio-badge">Trascendental</span>
+                    <span>Cualquier producción para exportación</span>
+                  </div>
+                </div>
+                <p class="cambios-nota"><strong>Importante:</strong> Las fuerzas de seguridad tienen prohibido hacer huelga. Nadie puede parar.</p>
+              </div>
+
+              <div class="frase-jefe">
+                <h4>Lo que podrían decirte</h4>
+                <blockquote>Mirá, vos sos servicio esencial así que tenés que quedarte. Es la ley, no es cosa mía.</blockquote>
+                <p class="frase-nota">El sindicato es quien organiza quién trabaja y quién para. No es decisión del empleador.</p>
+              </div>
+
+              <div class="que-hacer">
+                <h4>¿Qué podés hacer?</h4>
+                <ul>
+                  <li>Consultá con tu sindicato en qué categoría está tu trabajo.</li>
+                  <li>El 75% es el mínimo, pero el sindicato organiza quién trabaja.</li>
+                  <li>Incluso en servicios esenciales, podés participar de otras acciones (asambleas, marchas fuera del horario).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAMBIO 4: Cuota Sindical -->
+      <section id="cuota-sindical" class="section cambio-section" data-step="6" data-step-title="Cuota sindical" data-cambio="cuotaSindical" aria-labelledby="cambio-cuota-title">
+        <div class="sticky-container">
+          <div class="container">
+            <header class="section-header">
+              <span class="section-number">06</span>
+              <h2 id="cambio-cuota-title">Cuota sindical</h2>
+              <p class="section-intro cambio-articulo">Arts. 37 y 137 → Modifican Art. 133 LCT y Art. 38 Ley 23.551</p>
+              <a href="#" class="ver-ley-link" data-ley="cuotaSindical">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                Ver texto de la ley
+              </a>
+            </header>
+
+            <div class="cambio-content">
+              <!-- Contexto Ley de Bases -->
+              <div class="contexto-ley-bases">
+                <h4>Lo que pasó con la Ley de Bases (2024)</h4>
+                <p>El gobierno quiso hacer la cuota sindical voluntaria en la Ley de Bases, pero tuvo que <strong>eliminar ese artículo</strong> para conseguir los votos de la CGT. Ahora lo vuelven a incluir en esta reforma.</p>
+              </div>
+
+              <div class="antes-despues">
+                <div class="antes-card">
+                  <h3>ANTES</h3>
+                  <p class="descripcion">Descuento automático</p>
+                  <p class="detalle">Si estabas afiliado, el empleador retenía la cuota sin preguntarte. Solo necesitaba autorización del Ministerio.</p>
+                </div>
+                <div class="despues-card">
+                  <h3>AHORA</h3>
+                  <p class="descripcion">Requiere tu firma</p>
+                  <p class="detalle">Tenés que autorizar por escrito. Y tanto vos como el empleador pueden cancelarlo con 30 días de aviso.</p>
+                </div>
+              </div>
+
+              <h4 class="cambios-titulo">Lo que cambia</h4>
+              <div class="cambios-cards">
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">✍️</span>
+                    <span class="cambio-titulo">Necesitan tu consentimiento</span>
+                  </div>
+                  <p class="cambio-explicacion">Ya no alcanza con estar afiliado. Ahora tenés que <mark class="rough-highlight">firmar autorizando el descuento</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Automático</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Con tu firma</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🚫</span>
+                    <span class="cambio-titulo">El empleador puede cancelarlo</span>
+                  </div>
+                  <p class="cambio-explicacion">Antes solo el sindicato o el Ministerio intervenían. Ahora <mark class="rough-highlight">el empleador también puede dejar de retener</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Obligación del empleador</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Puede negarse</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">💰</span>
+                    <span class="cambio-titulo">Menos plata para el sindicato</span>
+                  </div>
+                  <p class="cambio-explicacion">Si menos trabajadores firman, el sindicato recauda menos. <mark class="rough-highlight">Menos plata = menos capacidad de organización</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Todos los afiliados aportaban</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Solo los que firmen</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="calc-cuota" class="calculadora" aria-label="Calculadora de cuota sindical">
+                <div class="calc-personalizada" hidden>
+                  <h4>Tu situación, <span class="user-name">trabajador</span></h4>
+                  <div class="calc-cuota-result">
+                    <p class="afiliado-si" hidden>
+                      Actualmente te descuentan aproximadamente <strong id="cuota-mensual">$0</strong>/mes de cuota sindical.
+                      <br>Con la nueva ley, <strong>este descuento pasa a ser voluntario</strong>.
+                    </p>
+                    <p class="afiliado-no" hidden>
+                      No estás afiliado, así que este cambio no te afecta directamente.
+                      <br>Pero ojo: si el sindicato pierde afiliados, pierde poder de negociación para todos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="frase-jefe">
+                <h4>Lo que podrían decirte</h4>
+                <blockquote>Che, la cuota sindical ahora es voluntaria. Si querés te la saco y te queda más plata en el bolsillo. Vos fijate.</blockquote>
+                <p class="frase-nota">El empleador no tiene por qué preguntarte esto. Si querés seguir aportando, simplemente firmá la autorización cuando te la pidan.</p>
+              </div>
+
+              <div class="que-hacer">
+                <h4>¿Qué podés hacer?</h4>
+                <ul>
+                  <li>Pensá bien antes de dejar de aportar. El sindicato te representa en paritarias aunque no pagues.</li>
+                  <li>Si el sindicato tiene menos recursos, tiene menos fuerza para negociar tu sueldo.</li>
+                  <li>Si tu empleador te presiona para que no firmes, eso es práctica desleal.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAMBIO 5: Convenios Colectivos -->
+      <section id="convenios" class="section cambio-section" data-step="7" data-step-title="Convenios" data-cambio="convenios" aria-labelledby="cambio-convenios-title">
+        <div class="sticky-container">
+          <div class="container">
+            <header class="section-header">
+              <span class="section-number">07</span>
+              <h2 id="cambio-convenios-title">Convenios colectivos</h2>
+              <p class="section-intro cambio-articulo">Arts. 130-132 → Modifican Arts. 18-19 Ley 14.250</p>
+              <a href="#" class="ver-ley-link" data-ley="convenios">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                Ver texto de la ley
+              </a>
+            </header>
+
+            <div class="cambio-content">
+              <!-- Contexto Ley de Bases -->
+              <div class="contexto-ley-bases">
+                <h4>Esto es nuevo de 2026</h4>
+                <p>La Ley de Bases (2024) no modificó la jerarquía de convenios. Esta reforma sí: ahora un convenio de empresa puede tener condiciones peores que el convenio nacional de tu sector.</p>
+              </div>
+
+              <div class="antes-despues">
+                <div class="antes-card">
+                  <h3>ANTES</h3>
+                  <p class="descripcion">El convenio nacional te protegía</p>
+                  <p class="detalle">Si tu empresa tenía convenio propio, solo podía mejorar las condiciones del convenio nacional, nunca empeorarlas.</p>
+                </div>
+                <div class="despues-card">
+                  <h3>AHORA</h3>
+                  <p class="descripcion">El convenio de empresa prevalece</p>
+                  <p class="detalle">El convenio de tu empresa puede tener condiciones distintas (peores) que el convenio nacional de tu sector.</p>
+                </div>
+              </div>
+
+              <h4 class="cambios-titulo">Lo que cambia</h4>
+              <div class="cambios-cards">
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">🏢</span>
+                    <span class="cambio-titulo">El convenio de empresa manda</span>
+                  </div>
+                  <p class="cambio-explicacion">Antes, si tu sector tenía 21 días de vacaciones y tu empresa firmaba 14, regían los 21. <mark class="rough-highlight">Ahora rige el de la empresa: 14</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">El mejor para vos</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">El de tu empresa</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">⏰</span>
+                    <span class="cambio-titulo">Pueden suspender convenios vencidos</span>
+                  </div>
+                  <p class="cambio-explicacion">Antes, un convenio vencido seguía vigente (ultraactividad). <mark class="rough-highlight">Ahora el gobierno puede suspenderlo</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Sigue vigente</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">Pueden suspenderlo</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cambio-card">
+                  <div class="cambio-header">
+                    <span class="cambio-icon">📋</span>
+                    <span class="cambio-titulo">Renegociación en 1 año</span>
+                  </div>
+                  <p class="cambio-explicacion">El gobierno va a convocar a renegociar todos los convenios vencidos. <mark class="rough-highlight">Sin acuerdo, caen tus condiciones</mark>.</p>
+                  <div class="cambio-comparacion">
+                    <div class="cambio-antes">
+                      <span class="cambio-label">ANTES</span>
+                      <span class="cambio-valor">Sin plazo</span>
+                    </div>
+                    <div class="cambio-flecha">→</div>
+                    <div class="cambio-ahora">
+                      <span class="cambio-label">AHORA</span>
+                      <span class="cambio-valor">1 año para renegociar</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="frase-jefe">
+                <h4>Lo que podrían decirte</h4>
+                <blockquote>Acá tenemos nuestro propio convenio, adaptado a la realidad de la empresa. Es más moderno que el nacional.</blockquote>
+                <p class="frase-nota">Pedí una copia del convenio de empresa y comparalo punto por punto con el nacional de tu actividad.</p>
+              </div>
+
+              <div class="que-hacer">
+                <h4>¿Qué podés hacer?</h4>
+                <ul>
+                  <li>Averiguá si tu empresa tiene convenio propio o si te rige el de tu sector.</li>
+                  <li>Compará las condiciones: vacaciones, jornada, adicionales, licencias.</li>
+                  <li>Si te quieren aplicar un convenio de empresa nuevo, tenés derecho a conocer el texto antes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SECCIÓN: Lo que se negoció - Art. 44 -->
+    <section id="negociacion" class="section negociacion-section" data-step="8" data-step-title="Lo que se negoció" aria-labelledby="negociacion-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">08</span>
+          <h2 id="negociacion-title">Lo que no pasó</h2>
+          <p class="section-intro">Un artículo se cayó en la negociación política. Así funcionó.</p>
+        </header>
+
+        <div class="cambio-content">
+          <div class="victoria-card">
+            <div class="victoria-header">
+              <span class="victoria-badge" style="background: #6b7280;">ELIMINADO EN DIPUTADOS</span>
+              <h3>Reducción de sueldo por enfermedad (Art. 44)</h3>
+            </div>
+
+            <div class="victoria-comparacion">
+              <div class="victoria-rechazado">
+                <h4>Lo que proponía el proyecto</h4>
+                <ul>
+                  <li>Si te enfermás por "actividad riesgosa voluntaria" → <strong>50% del sueldo</strong></li>
+                  <li>Si te enfermás por otras causas → <strong>75% del sueldo</strong></li>
+                  <li>¿Quién decidía si era "voluntario"? El empleador.</li>
+                </ul>
+              </div>
+              <div class="victoria-mantenido">
+                <h4>Cómo queda (sin cambios)</h4>
+                <ul>
+                  <li>Si te enfermás → <strong>100% del sueldo</strong></li>
+                  <li>3 meses sin cargas de familia</li>
+                  <li>6 meses con cargas de familia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="cambios-titulo">¿Por qué se eliminó?</h4>
+          <div class="cambios-cards">
+            <div class="cambio-card">
+              <div class="cambio-header">
+                <span class="cambio-icon">🏛️</span>
+                <span class="cambio-titulo">Presión de bloques aliados</span>
+              </div>
+              <p class="cambio-explicacion">Varios bloques aliados del oficialismo <mark class="rough-highlight">se negaron a votar este artículo</mark>. Sin sus votos, no había mayoría.</p>
+            </div>
+
+            <div class="cambio-card">
+              <div class="cambio-header">
+                <span class="cambio-icon">🤝</span>
+                <span class="cambio-titulo">Negociación hasta última hora</span>
+              </div>
+              <p class="cambio-explicacion">El gobierno tuvo que elegir: o mantenía el artículo 44 y perdía la ley, o lo sacaba. <mark class="rough-highlight">Eligió sacarlo</mark>.</p>
+            </div>
+
+            <div class="cambio-card">
+              <div class="cambio-header">
+                <span class="cambio-icon">📢</span>
+                <span class="cambio-titulo">También hubo presión sindical</span>
+              </div>
+              <p class="cambio-explicacion">La CGT y los gremios lo rechazaron. Pero el factor decisivo fue que <mark class="rough-highlight">los aliados no querían pagar el costo político</mark>.</p>
+            </div>
+          </div>
+
+          <div class="calc-nota" style="margin-top: var(--space-lg);">
+            <p><strong>¿Qué nos dice esto?</strong></p>
+            <p>La reforma pasó porque el gobierno negoció con sus aliados. Este artículo cayó porque era demasiado para algunos diputados aliados. No fue un freno a la reforma, fue un ajuste para conseguir los votos.</p>
+          </div>
+
+          <a href="#" class="ver-ley-link" data-ley="art44eliminado">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+            Ver qué decía el artículo eliminado
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Otros Cambios (Blanqueo y RIFL) -->
+    <section id="otros-cambios" class="section otros-section" data-step="9" data-step-title="Otros cambios" aria-labelledby="otros-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">09</span>
+          <h2 id="otros-title">Para empleadores (pero te afecta)</h2>
+          <p class="section-intro">Estos beneficios son para tu empleador, pero pueden impactarte.</p>
+        </header>
+
+        <div class="otros-cards" role="list">
+          <article class="otro-card" role="listitem">
+            <div class="otro-header">
+              <h3>Blanqueo laboral</h3>
+              <div class="otro-cambio">
+                <span class="nuevo">NUEVO</span>
+              </div>
+            </div>
+            <p>Si tu empleador te tuvo sin registrar, ahora puede "blanquearte" y <mark class="rough-highlight">el Estado le perdona el 70%</mark> de lo que debía en aportes y multas. Para PyMEs le perdonan el 90%. Puede pagarlo en hasta 72 cuotas.</p>
+            <p><strong>Importante:</strong> Tu empleador te tuvo años sin registrar, no te pagó obra social ni aportes jubilatorios, y ahora el Estado le perdona casi todo. Vos perdiste esos años de aportes para siempre.</p>
+          </article>
+
+          <article class="otro-card" role="listitem">
+            <div class="otro-header">
+              <h3>Eliminación de multas</h3>
+              <div class="otro-cambio">
+                <span class="eliminado">ELIMINADO</span>
+              </div>
+            </div>
+            <p>Se eliminaron las multas que castigaban al empleador por tenerte sin registrar. <mark class="rough-highlight">Ya no hay castigo económico real</mark>.</p>
+            <p><strong>Importante:</strong> Ya no hay castigo económico real por tenerte sin registrar. El incentivo a registrarte baja.</p>
+          </article>
+
+          <article class="otro-card" role="listitem">
+            <div class="otro-header">
+              <h3>Bloqueos = despido</h3>
+              <div class="otro-cambio">
+                <span class="nuevo">NUEVO</span>
+              </div>
+            </div>
+            <p>Participar en un bloqueo o piquete ahora es causal de <mark class="rough-highlight">despido con justa causa</mark>. Los dirigentes pueden ser sancionados.</p>
+            <p><strong>Importante:</strong> El bloqueo es una de las pocas herramientas de presión que tienen los trabajadores. Ahora puede costarte el trabajo.</p>
+          </article>
+
+          <article class="otro-card" role="listitem">
+            <div class="otro-header">
+              <h3>Descuentos por contratar</h3>
+              <div class="otro-cambio">
+                <span class="nuevo">NUEVO</span>
+              </div>
+            </div>
+            <p>Si una empresa te contrata siendo desempleado o monotributista, <mark class="rough-highlight">paga menos cargas sociales durante 4 años</mark>. El primer año paga solo el 50%.</p>
+            <p><strong>Importante:</strong> Ese descuento sale del sistema jubilatorio. Es plata que deja de entrar a ANSES para pagar las jubilaciones de hoy. Todos los jubilados financian el beneficio de las empresas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Conclusión -->
+    <section id="conclusion" class="section conclusion-section" data-step="10" data-step-title="Conclusión" aria-labelledby="conclusion-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">10</span>
+          <h2 id="conclusion-title">Resumen: lo que cambió</h2>
+          <p class="section-intro">Todo lo que vimos, en una sola página.</p>
+        </header>
+
+        <div class="conclusion-content">
+
+          <!-- Comparación internacional -->
+          <div class="comparacion-internacional-box">
+            <h3>¿A qué países nos parecemos más?</h3>
+            <p class="comparacion-intro">Con esta reforma, Argentina se aleja del modelo europeo de protección laboral y se acerca al modelo anglosajón de flexibilización.</p>
+
+            <div class="comparacion-grid">
+              <div class="comparacion-grupo acercamos">
+                <h4>Nos acercamos a...</h4>
+                <ul>
+                  <li>
+                    <strong>🇺🇸 Estados Unidos</strong>
+                    <span>Despido "at-will" (sin causa), sin indemnización obligatoria por ley</span>
+                  </li>
+                  <li>
+                    <strong>🇬🇧 Reino Unido</strong>
+                    <span>Período de prueba de 2 años, baja indemnización</span>
+                  </li>
+                  <li>
+                    <strong>🇨🇱 Chile</strong>
+                    <span>Tope de indemnización (330 días), flexibilidad en convenios</span>
+                  </li>
+                  <li>
+                    <strong>🇦🇺 Australia</strong>
+                    <span>Modelo anglosajón, convenios de empresa prevalecen</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="comparacion-grupo alejamos">
+                <h4>Nos alejamos de...</h4>
+                <ul>
+                  <li>
+                    <strong>🇩🇰 Dinamarca</strong>
+                    <span>Líder mundial en derechos laborales (LRI: 93.5/100)</span>
+                  </li>
+                  <li>
+                    <strong>🇳🇴 Noruega</strong>
+                    <span>Segundo lugar en protección laboral (LRI: 94/100)</span>
+                  </li>
+                  <li>
+                    <strong>🇩🇪 Alemania</strong>
+                    <span>Convenio sectorial prevalece, cogestión sindical</span>
+                  </li>
+                  <li>
+                    <strong>🇫🇷 Francia</strong>
+                    <span>35 horas semanales, fuerte protección contra despido</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comparacion-latam">
+              <h4>Mientras tanto, en la región...</h4>
+              <p>Varios países latinoamericanos van en dirección opuesta:</p>
+              <ul>
+                <li><strong>🇨🇴 Colombia (2024):</strong> Las horas extra a partir de las 19hs se consideran nocturnas (con recargo mayor que las diurnas), y los contratos temporales de 4+ años pasan a ser indefinidos</li>
+                <li><strong>🇧🇷 Brasil (2025-2028):</strong> Reducción gradual de la jornada a 42 horas semanales, con objetivo de llegar a 40hs en 2028</li>
+                <li><strong>🇲🇽 México:</strong> Nueva ley de teletrabajo con derecho a desconexión digital</li>
+              </ul>
+            </div>
+
+            <p class="comparacion-fuente">Fuentes: <a href="https://www.oecd.org/en/data/datasets/oecd-indicators-of-employment-protection.html" target="_blank" rel="noopener">OECD Employment Protection</a>, <a href="https://labourrightsindex.org" target="_blank" rel="noopener">Labour Rights Index</a></p>
+          </div>
+
+          <!-- Timeline histórico -->
+          <div class="historia-box">
+            <h3>Las 8 horas: una conquista de sangre</h3>
+            <p class="historia-intro">Los derechos laborales no fueron regalados. Se conquistaron con luchas, huelgas y vidas.</p>
+
+            <div class="historia-timeline">
+              <!-- Conquista global -->
+              <div class="historia-era conquista">
+                <div class="era-header">
+                  <span class="era-titulo">La conquista</span>
+                </div>
+
+                <div class="historia-item">
+                  <span class="historia-fecha">1856</span>
+                  <div class="historia-contenido">
+                    <strong>Australia: primera ley de 8 horas</strong>
+                    <p>Los obreros de la construcción de Melbourne marchan y logran la primera ley del mundo que limita la jornada a 8 horas. El lema: <em>"8 horas de trabajo, 8 de descanso, 8 de recreación"</em>.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item destacado">
+                  <span class="historia-fecha">1886</span>
+                  <div class="historia-contenido">
+                    <strong>Chicago: huelga y represión</strong>
+                    <p>El 1° de mayo, 200.000 obreros paran en EE.UU. por las 8 horas. La represión policial deja muertos. A fines de mayo, cientos de miles de obreros ya habían conseguido la jornada reducida.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item negativo">
+                  <span class="historia-fecha">1887</span>
+                  <div class="historia-contenido">
+                    <strong>Ejecutan a los Mártires de Chicago</strong>
+                    <p>El 11 de noviembre son ahorcados <mark class="rough-highlight">Parsons, Spies, Fischer y Engel</mark>. La indignación mundial fortalece al movimiento obrero.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item positivo">
+                  <span class="historia-fecha">1889</span>
+                  <div class="historia-contenido">
+                    <strong>Nace el 1° de Mayo</strong>
+                    <p>La Internacional Socialista declara el <mark class="rough-highlight">1° de mayo</mark> como día mundial de lucha por las 8 horas, en memoria de los mártires.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item">
+                  <span class="historia-fecha">1919</span>
+                  <div class="historia-contenido">
+                    <strong>OIT: estándar mundial</strong>
+                    <p>La Organización Internacional del Trabajo adopta el Convenio N°1: jornada de 8 horas y 48 horas semanales como estándar internacional.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item">
+                  <span class="historia-fecha">1929</span>
+                  <div class="historia-contenido">
+                    <strong>Argentina: Ley 11.544</strong>
+                    <p>Yrigoyen promulga la jornada de 8 horas. También 7 horas para trabajo nocturno y 6 para insalubre. <mark class="rough-highlight">Nos llevó 73 años desde Chicago.</mark></p>
+                  </div>
+                </div>
+
+                <div class="historia-item positivo destacado">
+                  <span class="historia-fecha">1945</span>
+                  <div class="historia-contenido">
+                    <strong>Perón: aguinaldo, vacaciones, indemnización</strong>
+                    <p>El Decreto 33.302 establece el <mark class="rough-highlight">aguinaldo</mark>, vacaciones pagas e indemnización por despido injustificado. La afiliación sindical crece 370% entre 1945 y 1950.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item positivo">
+                  <span class="historia-fecha">1949</span>
+                  <div class="historia-contenido">
+                    <strong>Constitución con derechos del trabajador</strong>
+                    <p>La reforma constitucional incluye los derechos del trabajador en el artículo 37: condiciones dignas, jornada limitada, descanso, retribución justa, protección contra despido arbitrario.</p>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+
+              <!-- Dictaduras -->
+              <div class="historia-era dictadura">
+                <div class="era-header">
+                  <span class="era-titulo">Los golpes</span>
+                </div>
+
+                <div class="historia-item negativo">
+                  <span class="historia-fecha">1955</span>
+                  <div class="historia-contenido">
+                    <strong>Revolución Libertadora: derogan la Constitución</strong>
+                    <p>El golpe militar derroca a Perón y deroga la Constitución de 1949 con todos sus derechos laborales.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item">
+                  <span class="historia-fecha">1957</span>
+                  <div class="historia-contenido">
+                    <strong>Aún en dictadura, se recupera algo</strong>
+                    <p>La Convención Constituyente (con peronismo proscripto) incorpora el <mark class="rough-highlight">artículo 14 bis</mark>. Lo impulsa Crisólogo Larralde (UCR) y lo redacta Carlos Bravo. Recupera derechos del trabajador, pero menos que la Constitución del 49.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item negativo destacado">
+                  <span class="historia-fecha">1976</span>
+                  <div class="historia-contenido">
+                    <strong>Dictadura cívico-militar: terrorismo de Estado</strong>
+                    <p>Se intervienen sindicatos, se prohíbe la huelga, se congela la negociación colectiva. <mark class="rough-highlight">Persiguen y desaparecen obreros y delegados</mark>. La participación salarial (qué porcentaje de la riqueza del país va a los trabajadores) cae del 48% al 30%.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item positivo">
+                  <span class="historia-fecha">1983</span>
+                  <div class="historia-contenido">
+                    <strong>Vuelta a la democracia</strong>
+                    <p>Alfonsín restituye libertades sindicales. En 1988 se sanciona la Ley 23.551 de Asociaciones Sindicales: elecciones democráticas, derecho de huelga, negociación colectiva.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Flexibilización neoliberal -->
+              <div class="historia-era flexibilizacion">
+                <div class="era-header">
+                  <span class="era-titulo">La flexibilización</span>
+                </div>
+
+                <div class="historia-item negativo">
+                  <span class="historia-fecha">1991</span>
+                  <div class="historia-contenido">
+                    <strong>Ley 24.013: "contratos basura"</strong>
+                    <p>Menem introduce contratos temporales, período de prueba extendido y modalidades precarias. Comienza la flexibilización laboral.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item negativo">
+                  <span class="historia-fecha">1995</span>
+                  <div class="historia-contenido">
+                    <strong>Ley 24.465: más flexibilización</strong>
+                    <p>Se triplican los contratos de prueba. El desempleo sube del 8% al 24% entre 1989 y 2003.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item negativo destacado">
+                  <span class="historia-fecha">2000</span>
+                  <div class="historia-contenido">
+                    <strong>Ley 25.250: "Ley Banelco"</strong>
+                    <p>De la Rúa extiende el período de prueba de 30 días a 3-6 meses, reduce aportes patronales y flexibiliza convenios. <mark class="rough-highlight">Escándalo de coimas</mark>: se investiga si se pagaron sobornos a senadores para votarla. Renuncia el vicepresidente Chacho Álvarez.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recuperación -->
+              <div class="historia-era recuperacion">
+                <div class="era-header">
+                  <span class="era-titulo">La recuperación</span>
+                </div>
+
+                <div class="historia-item positivo">
+                  <span class="historia-fecha">2004</span>
+                  <div class="historia-contenido">
+                    <strong>Ley 25.877: se deroga la Ley Banelco</strong>
+                    <p>Kirchner deroga la ley del escándalo. Se recuperan protecciones, aumenta el salario mínimo, se fortalece la negociación colectiva.</p>
+                  </div>
+                </div>
+
+                <div class="historia-item positivo">
+                  <span class="historia-fecha">2004-2015</span>
+                  <div class="historia-contenido">
+                    <strong>Expansión de derechos</strong>
+                    <p>Se duplica el empleo registrado. Más de 2.000 convenios colectivos homologados por año. Paritarias anuales.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nuevo retroceso -->
+              <div class="historia-era nuevo-retroceso">
+                <div class="era-header">
+                  <span class="era-titulo">El nuevo retroceso</span>
+                </div>
+
+                <div class="historia-item negativo destacado">
+                  <span class="historia-fecha">2024-26</span>
+                  <div class="historia-contenido">
+                    <strong>Ley Bases y Reforma Laboral</strong>
+                    <p>Se vuelve a flexibilizar: banco de horas sin pago extra, tope a indemnizaciones, debilitamiento sindical, convenios de empresa sobre nacionales. <mark class="rough-highlight">¿Cuánto tardaremos en recuperar estos derechos?</mark></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="historia-footer">
+              <p class="historia-cierre">
+                <strong>La historia enseña:</strong> los derechos que no se defienden, se pierden. Pero también: <strong>lo que se pierde, se puede recuperar.</strong>
+              </p>
+              <p class="historia-cierre-secundario">
+                También enseña que cada vez que hubo "modernización", "flexibilización" o "libertad de mercado", los que perdieron fueron los trabajadores. Las palabras cambian, el resultado es el mismo: más poder para el empleador, menos protección para vos.
+              </p>
+
+              <p class="historia-fuentes">
+                Fuentes:
+                <a href="https://es.wikipedia.org/wiki/Jornada_de_ocho_horas" target="_blank" rel="noopener">Jornada 8 horas</a>,
+                <a href="https://historiaobrera.com.ar/events/1929-la-limitacion-legal-de-la-jornada-laboral/" target="_blank" rel="noopener">Ley 11.544</a>,
+                <a href="https://labancaria.org/20-de-diciembre-de-1945-peron-promulgo-el-decreto-33-302-45-instaurando-aguinaldo-vacaciones-pagas-e-indemnizacion-por-despidos-injustificados/" target="_blank" rel="noopener">Decreto 33.302</a>,
+                <a href="https://www.conicet.gov.ar/los-derechos-sociales-en-la-ultima-dictadura/" target="_blank" rel="noopener">CONICET - Dictadura</a>,
+                <a href="https://es.wikipedia.org/wiki/Esc%C3%A1ndalo_de_coimas_en_el_Senado" target="_blank" rel="noopener">Ley Banelco</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Fechas clave -->
+          <div class="fechas-box">
+            <h3>Fechas clave</h3>
+            <div class="fechas-timeline">
+              <div class="fecha-item">
+                <span class="fecha-fecha">12 Feb 2025</span>
+                <span class="fecha-desc">Aprobación en Senado (42-30)</span>
+              </div>
+              <div class="fecha-item">
+                <span class="fecha-fecha">20 Feb 2025</span>
+                <span class="fecha-desc">Aprobación en Diputados (135-115)</span>
+              </div>
+              <div class="fecha-item destacada">
+                <span class="fecha-fecha">Mar 2025</span>
+                <span class="fecha-desc">Promulgación y entrada en vigencia de la ley</span>
+              </div>
+              <div class="fecha-item">
+                <span class="fecha-fecha">1 Jun 2026</span>
+                <span class="fecha-desc">Entrada en vigencia del FAL (Fondo de Cese)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resumen de impacto -->
+          <div class="impacto-resumen-box">
+            <h3>En resumen: una reforma que debilita tus derechos</h3>
+            <p>Esta reforma representa un retroceso en las conquistas laborales históricas de los trabajadores argentinos. Bajo el nombre de "modernización", se flexibilizan protecciones que costaron décadas conseguir:</p>
+            <ul class="impacto-lista">
+              <li><strong>Menos plata en tu bolsillo:</strong> indemnizaciones más bajas, horas extra que pueden no pagarse, y un fondo de cese que sale de tu salario.</li>
+              <li><strong>Más poder para tu empleador:</strong> convenios de empresa que pueden ser peores que los nacionales, jornadas flexibles según necesidades de la empresa, vacaciones fragmentadas.</li>
+              <li><strong>Menos herramientas para defenderte:</strong> cuota sindical voluntaria que debilita a los gremios, restricciones al derecho de huelga, bloqueos como causal de despido.</li>
+              <li><strong>Beneficios para empleadores infractores:</strong> blanqueo con 70-90% de condonación para quienes tuvieron trabajadores sin registrar, eliminación de multas.</li>
+            </ul>
+            <p class="impacto-cierre">La reforma amplía la flexibilidad empresarial a costa de la estabilidad laboral y el bienestar de quienes trabajan.</p>
+          </div>
+
+          <!-- Lo que NO cambió -->
+          <div class="no-cambio-box">
+            <h3>Derechos que siguen vigentes: hacelos valer</h3>
+            <p class="no-cambio-intro">Estos derechos no los tocaron. Conocelos y exigilos:</p>
+            <ul class="no-cambio-lista">
+              <li><strong>Licencias por enfermedad:</strong> Seguís cobrando el 100% de tu sueldo. No dejes que te digan lo contrario.</li>
+              <li><strong>Días de vacaciones:</strong> La cantidad según antigüedad sigue igual. Que no te las recorten.</li>
+              <li><strong>Aguinaldo:</strong> Se sigue pagando en junio y diciembre. Es tu derecho.</li>
+              <li><strong>Despido con causa:</strong> Sigue requiriendo justificación real. Pedí que te la den por escrito.</li>
+            </ul>
+          </div>
+
+          
+          <!-- Qué hacer -->
+          <div class="acciones-box">
+            <h3>¿Qué podés hacer?</h3>
+            <div class="acciones-grid">
+              <div class="accion-item">
+                <span class="accion-icono">📖</span>
+                <strong>Informarte</strong>
+                <p>Leé el texto completo de la ley. Acá resumimos lo más importante, pero hay más.</p>
+              </div>
+              <div class="accion-item">
+                <span class="accion-icono">🗣️</span>
+                <strong>Hablar con tu sindicato</strong>
+                <p>Conocen tu convenio colectivo y pueden explicarte cómo te afecta específicamente.</p>
+              </div>
+              <div class="accion-item">
+                <span class="accion-icono">🧾</span>
+                <strong>Revisar tu recibo</strong>
+                <p>Chequeá los descuentos, la cuota sindical y los aportes. Guardá los últimos 12 meses.</p>
+              </div>
+              <div class="accion-item">
+                <span class="accion-icono">🤝</span>
+                <strong>Organizarte</strong>
+                <p>Hablá con tus compañeros y compañeras. Juntos tienen más fuerza para negociar.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recursos -->
+          <div class="recursos-box">
+            <h3>Recursos útiles</h3>
+            <div class="recursos-grid">
+              <a href="https://www.argentina.gob.ar/sites/default/files/proyecto_de_ley_de_modernizacion_laboral._vf.pdf" class="recurso-link" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>PDF del proyecto de ley</span>
+              </a>
+              <a href="https://www.boletinoficial.gob.ar/" class="recurso-link" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Boletín Oficial</span>
+              </a>
+              <a href="https://facttic.org.ar" class="recurso-link facttic" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>FACTTIC - Cooperativas de tecnología</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sobre FACTTIC -->
+          <div class="facttic-box">
+            <h3>¿Quiénes hicimos esto?</h3>
+            <p>Somos <strong>FACTTIC</strong>, la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento.</p>
+            <p>Somos trabajadores organizados y autogestionados. Elegimos mejorar nuestras condiciones laborales en vez de empeorarlas. Por eso nos preocupa una reforma que va en la dirección contraria.</p>
+            <p class="facttic-cta">Si querés saber más sobre las cooperativas de tecnología, visitá <a href="https://facttic.org.ar" target="_blank" rel="noopener">facttic.org.ar</a></p>
+          </div>
+
+          <!-- Compartir -->
+          <div class="compartir-box">
+            <h3>Compartí esta información</h3>
+            <p class="compartir-intro">Si te sirvió, compartilo con tus compañeros de trabajo.</p>
+            <div class="compartir-buttons">
+              <button class="compartir-btn whatsapp" data-share="whatsapp">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+              </button>
+              <button class="compartir-btn twitter" data-share="twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                Twitter/X
+              </button>
+              <button class="compartir-btn instagram" data-share="instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                Instagram
+              </button>
+              <button class="compartir-btn copiar" data-share="copy">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                Copiar link
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 10: Anexo - Votación detallada -->
+    <section id="votacion" class="section votacion-section" data-step="14" data-step-title="Votación" aria-labelledby="votacion-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-number">ANEXO</span>
+          <h2 id="votacion-title">Detalle de la votación</h2>
+          <p class="section-intro">El proceso legislativo y cómo votó cada bloque.</p>
+        </header>
+
+        <!-- Timeline compacto -->
+        <div class="votacion-timeline">
+          <h3>Cronología legislativa</h3>
+          <div class="timeline-compact">
+            <div class="timeline-step">
+              <span class="step-date">11 Dic 2025</span>
+              <span class="step-title">Proyecto Ejecutivo</span>
+            </div>
+            <div class="timeline-arrow">→</div>
+            <div class="timeline-step">
+              <span class="step-date">11-12 Feb 2026</span>
+              <span class="step-title">Senado: 42-30</span>
+              <span class="step-detail">17hs de debate</span>
+            </div>
+            <div class="timeline-arrow">→</div>
+            <div class="timeline-step">
+              <span class="step-date">20 Feb 2026</span>
+              <span class="step-title">Diputados: 135-115</span>
+              <span class="step-detail">12hs de sesión</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="votacion-mapa">
+          <h3>Por provincia</h3>
+          <p class="votacion-intro">Tocá cada provincia para ver el detalle.</p>
+
+          <div class="mapa-container">
+            <div id="mapa-viz" role="img" aria-label="Mapa de Argentina con votación por provincia"></div>
+          </div>
+        </div>
+
+        <!-- Bloques -->
+        <div class="votacion-bloques">
+          <h3>Diputados: cómo votó cada bloque</h3>
+          <p class="stacked-hint">Tocá cada bloque para ver el detalle</p>
+
+          <div class="stacked-chart">
+            <!-- A FAVOR: 135 votos = 100% -->
+            <div class="stacked-row">
+              <span class="row-label">A FAVOR</span>
+              <div class="stacked-bar-wrapper">
+                <div class="stacked-bar" style="width: 100%">
+                  <div class="segment" style="flex: 87; background: #7b3fa0" data-bloque="La Libertad Avanza" data-votos="87"></div>
+                  <div class="segment" style="flex: 12; background: #fed500" data-bloque="PRO" data-votos="12"></div>
+                  <div class="segment" style="flex: 7; background: #4a90d9" data-bloque="Innovación Federal" data-votos="7"></div>
+                  <div class="segment" style="flex: 6; background: #e31837" data-bloque="UCR" data-votos="6"></div>
+                  <div class="segment" style="flex: 6; background: #17a2b8" data-bloque="Provincias Unidas" data-votos="6"></div>
+                  <div class="segment" style="flex: 17; background: #6c757d" data-bloque="Otros" data-votos="17"></div>
+                </div>
+              </div>
+              <span class="row-total">135</span>
+            </div>
+            <!-- EN CONTRA: 115 votos = 85% de 135 -->
+            <div class="stacked-row">
+              <span class="row-label">EN CONTRA</span>
+              <div class="stacked-bar-wrapper">
+                <div class="stacked-bar" style="width: 85%">
+                  <div class="segment" style="flex: 89; background: #0099cc" data-bloque="Unión por la Patria" data-votos="89"></div>
+                  <div class="segment" style="flex: 9; background: #17a2b8" data-bloque="Provincias Unidas" data-votos="9"></div>
+                  <div class="segment" style="flex: 4; background: #d62828" data-bloque="FIT-Unidad" data-votos="4"></div>
+                  <div class="segment" style="flex: 3; background: #ff7b00" data-bloque="Elijo Catamarca" data-votos="3"></div>
+                  <div class="segment" style="flex: 5; background: #00a86b" data-bloque="Coalición Cívica + EF" data-votos="5"></div>
+                  <div class="segment" style="flex: 5; background: #6c757d" data-bloque="Otros" data-votos="5"></div>
+                </div>
+              </div>
+              <span class="row-total">115</span>
+            </div>
+          </div>
+
+          <h3>Senado: cómo votó cada bloque</h3>
+
+          <div class="stacked-chart">
+            <!-- A FAVOR: 42 votos = 100% -->
+            <div class="stacked-row">
+              <span class="row-label">A FAVOR</span>
+              <div class="stacked-bar-wrapper">
+                <div class="stacked-bar" style="width: 100%">
+                  <div class="segment" style="flex: 19; background: #7b3fa0" data-bloque="La Libertad Avanza" data-votos="19"></div>
+                  <div class="segment" style="flex: 10; background: #e31837" data-bloque="UCR" data-votos="10"></div>
+                  <div class="segment" style="flex: 4; background: #fed500" data-bloque="PRO" data-votos="4"></div>
+                  <div class="segment" style="flex: 9; background: #6c757d" data-bloque="Otros" data-votos="9"></div>
+                </div>
+              </div>
+              <span class="row-total">42</span>
+            </div>
+            <!-- EN CONTRA: 30 votos = 71% de 42 -->
+            <div class="stacked-row">
+              <span class="row-label">EN CONTRA</span>
+              <div class="stacked-bar-wrapper">
+                <div class="stacked-bar" style="width: 71%">
+                  <div class="segment" style="flex: 28; background: #0099cc" data-bloque="Unión por la Patria" data-votos="28"></div>
+                  <div class="segment" style="flex: 2; background: #20c997" data-bloque="Otros" data-votos="2"></div>
+                </div>
+              </div>
+              <span class="row-total">30</span>
+            </div>
+          </div>
+
+          <!-- Tooltip para hover -->
+          <div class="segment-tooltip" id="segment-tooltip"></div>
+        </div>
+
+        <div id="mapa-tooltip" class="tooltip" role="tooltip" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Cierre y Reflexión -->
+    <section id="cierre" class="section cierre-section" data-step="15" data-step-title="Cierre" aria-labelledby="cierre-title">
+      <div class="container">
+        <div class="cierre-content">
+
+          <div class="cierre-header">
+            <h2 id="cierre-title">Una reflexión final</h2>
+          </div>
+
+          <div class="cierre-mensaje">
+            <blockquote class="cierre-quote">
+              <p>"Los derechos de los trabajadores no cayeron del cielo. Se conquistaron con organización, con lucha, y a veces con sangre."</p>
+            </blockquote>
+
+            <div class="cierre-texto">
+              <p>Esta reforma es una más en una larga historia de avances y retrocesos. Pero la historia también enseña que <strong>lo que se pierde, se puede recuperar</strong>.</p>
+
+              <p>Desde FACTTIC, como trabajadores organizados en cooperativas, creemos que la información es una herramienta de poder. Entender qué cambió es el primer paso para defender lo que queda y recuperar lo perdido.</p>
+
+              <p>No estás solo/a. Hay sindicatos, delegados, organizaciones y compañeros/as que están en la misma situación. <strong>La solidaridad entre trabajadores es nuestra mayor fortaleza.</strong></p>
+            </div>
+          </div>
+
+          <div class="cierre-acciones">
+            <h3>¿Qué podés hacer?</h3>
+            <ul class="acciones-lista-cierre">
+              <li>
+                <span class="accion-icono">🗣️</span>
+                <span><strong>Informate e informá:</strong> Compartí esta guía con compañeros/as de trabajo.</span>
+              </li>
+              <li>
+                <span class="accion-icono">🤝</span>
+                <span><strong>Organizate:</strong> Acercate a tu sindicato o delegado/a. Si no hay, podés ser vos quien empiece.</span>
+              </li>
+              <li>
+                <span class="accion-icono">📋</span>
+                <span><strong>Conocé tus derechos:</strong> Leé tu convenio colectivo, revisá tu recibo de sueldo.</span>
+              </li>
+              <li>
+                <span class="accion-icono">⚖️</span>
+                <span><strong>Consultá profesionales:</strong> Ante dudas específicas, buscá asesoramiento legal.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cierre-facttic">
+            <div class="facttic-logo-cierre">FACTTIC</div>
+            <p>Somos la <strong>Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento</strong>.</p>
+            <p>Trabajadores que elegimos organizarnos de otra forma: sin patrones, con autogestión y solidaridad. Porque creemos que otro modelo de trabajo es posible.</p>
+            <a href="https://facttic.org.ar" target="_blank" rel="noopener" class="facttic-link-cierre">Conocé más sobre nosotros →</a>
+          </div>
+
+          <div class="cierre-legal-box">
+            <h4>Aviso legal</h4>
+            <p>Esta infografía fue elaborada por FACTTIC con fines informativos y educativos. <strong>No constituye asesoramiento legal</strong> ni reemplaza la consulta con profesionales matriculados.</p>
+            <p>La información presentada se basa en nuestra interpretación de la Ley 27.742 (2024) y la reforma laboral de 2026. Puede contener errores u omisiones. Los ejemplos y cálculos son ilustrativos.</p>
+            <p>FACTTIC no se responsabiliza por decisiones tomadas en base a este contenido. Para casos específicos, consultá siempre con tu sindicato, delegado/a o abogado/a laboralista.</p>
+            <p class="legal-fecha">Última actualización: Febrero 2026</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer FACTTIC -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h4>Sobre FACTTIC</h4>
+            <p>Somos la <strong>Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento</strong>. Trabajadores organizados en cooperativas, desarrollando tecnología con valores de solidaridad y autogestión.</p>
+                      </div>
+          <div class="footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><a href="https://facttic.org.ar" target="_blank" rel="noopener">facttic.org.ar</a></li>
+              <li><a href="https://github.com/facttic" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://twitter.com/facttic" target="_blank" rel="noopener">Twitter/X</a></li>
+            </ul>
+          </div>
+          <div class="footer-legal">
+            <p class="legal-disclaimer"><strong>Descargo de responsabilidad:</strong> El contenido de esta infografía es meramente informativo y representa la interpretación de FACTTIC sobre la legislación vigente. No constituye asesoramiento legal, laboral ni profesional de ningún tipo. FACTTIC no garantiza la exactitud, completitud o actualidad de la información presentada y no asume responsabilidad por errores, omisiones o por las consecuencias derivadas del uso de esta información.</p>
+            <p class="legal-disclaimer">Las referencias a leyes y artículos son orientativas. Para aplicación a casos concretos, consulte siempre con un profesional matriculado. Los cálculos y ejemplos son ilustrativos y pueden variar según convenio colectivo, jurisprudencia y circunstancias particulares.</p>
+            <p class="copyright">© 2026 FACTTIC - Contenido libre bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener">CC BY-SA 4.0</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal para mostrar texto de ley -->
+  <div id="ley-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <header class="modal-header">
+        <div>
+          <h3 id="modal-titulo">Artículo de la ley</h3>
+          <p class="articulo-ref" id="modal-referencia"></p>
+        </div>
+        <button class="modal-close" aria-label="Cerrar" id="modal-cerrar">&times;</button>
+      </header>
+      <div class="modal-body">
+        <div class="ley-texto" id="modal-texto"></div>
+      </div>
+      <footer class="modal-footer">
+        Fuente: Ley de Modernización Laboral, texto aprobado por Diputados el 20/02/2026
+      </footer>
+    </div>
+  </div>
+
+  <!-- Rough Notation para anotaciones estilo manuscrito -->
+  <script type="module">
+    import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
+    window.annotate = annotate;
+    window.annotationGroup = annotationGroup;
+  </script>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/input-masks.js"></script>
+  <script type="module" src="/js/annotations.js"></script>
+</body>
+</html>
