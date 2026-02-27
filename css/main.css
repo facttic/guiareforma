@@ -2799,7 +2799,7 @@ section[id] {
 }
 
 .cierre-impacto .impacto-lista {
-  list-style: disc;
+  list-style: none;
   padding-left: var(--space-5);
   margin: 0 0 var(--space-4) 0;
 }
@@ -2808,6 +2808,17 @@ section[id] {
   margin-bottom: var(--space-3);
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
+  position: relative;
+  padding-left: 0;
+  border-bottom: none;
+}
+
+.cierre-impacto .impacto-lista li::before {
+  content: '✗';
+  position: absolute;
+  left: calc(-1 * var(--space-5));
+  color: var(--color-negative);
+  font-weight: bold;
 }
 
 .cierre-impacto .impacto-lista li:last-child {
@@ -2842,7 +2853,7 @@ section[id] {
 }
 
 .cierre-no-cambio .no-cambio-lista {
-  list-style: disc;
+  list-style: none;
   padding-left: var(--space-5);
   margin: 0;
 }
@@ -2851,6 +2862,17 @@ section[id] {
   margin-bottom: var(--space-3);
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
+  position: relative;
+  padding-left: 0;
+  border-bottom: none;
+}
+
+.cierre-no-cambio .no-cambio-lista li::before {
+  content: '✓';
+  position: absolute;
+  left: calc(-1 * var(--space-5));
+  color: var(--color-positive);
+  font-weight: bold;
 }
 
 .cierre-no-cambio .no-cambio-lista li:last-child {
