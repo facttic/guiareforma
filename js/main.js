@@ -40,14 +40,14 @@ async function init() {
   // Inicializar navegación mobile
   initMobileNav();
 
-  // Inicializar formulario
+  // Inicializar Wizard PRIMERO (para que nextStep esté disponible)
+  initWizard();
+
+  // Inicializar formulario (usa nextStep del wizard)
   initUserData(onUserDataChange);
 
   // Inicializar visualizaciones
   initVisualizations();
-
-  // Inicializar Wizard (navegación paso a paso)
-  initWizard();
 
   // Escuchar cambios de paso para actualizar visualizaciones
   document.addEventListener('wizardStepChange', onWizardStepChange);
@@ -66,13 +66,16 @@ async function init() {
  * Cargar todos los datos JSON
  */
 async function loadData() {
+  // Usar BASE_URL de Vite para que funcione en GitHub Pages
+  const base = import.meta.env.BASE_URL || '/';
+
   try {
     const [senadores, provincias, bloques, cambios, sectores] = await Promise.all([
-      fetch('/data/senadores.json').then(r => r.json()),
-      fetch('/data/provincias.json').then(r => r.json()),
-      fetch('/data/bloques.json').then(r => r.json()),
-      fetch('/data/cambios.json').then(r => r.json()),
-      fetch('/data/sectores-cct.json').then(r => r.json())
+      fetch(`${base}data/senadores.json`).then(r => r.json()),
+      fetch(`${base}data/provincias.json`).then(r => r.json()),
+      fetch(`${base}data/bloques.json`).then(r => r.json()),
+      fetch(`${base}data/cambios.json`).then(r => r.json()),
+      fetch(`${base}data/sectores-cct.json`).then(r => r.json())
     ]);
 
     dataSenadores = senadores;

@@ -2596,7 +2596,7 @@ section[id] {
 }
 
 .cierre-content {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -2739,6 +2739,122 @@ section[id] {
 .facttic-link-cierre:hover {
   background: #2563eb;
   color: white;
+}
+
+.cierre-recursos,
+.cierre-compartir {
+  background: var(--box-neutral-bg);
+  border: 1px solid var(--box-neutral-border);
+  border-radius: var(--radius-md);
+  padding: var(--box-padding-lg);
+  margin-bottom: var(--space-6);
+}
+
+.cierre-recursos h3,
+.cierre-compartir h3 {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-lg);
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+/* Fechas clave en cierre */
+.cierre-fechas {
+  background: var(--box-neutral-bg);
+  border: 1px solid var(--box-neutral-border);
+  border-radius: var(--radius-md);
+  padding: var(--box-padding-lg);
+  margin-bottom: var(--space-6);
+}
+
+.cierre-fechas h3 {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-lg);
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+/* Impacto en cierre */
+.cierre-impacto {
+  background: var(--box-alert-bg);
+  border: 2px solid var(--box-alert-border);
+  border-left-width: var(--box-border-accent);
+  border-radius: var(--radius-md);
+  padding: var(--box-padding-lg);
+  margin-bottom: var(--space-6);
+}
+
+.cierre-impacto h3 {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-lg);
+  color: var(--box-alert-accent);
+  margin-bottom: var(--space-4);
+}
+
+.cierre-impacto > p {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.cierre-impacto .impacto-lista {
+  list-style: disc;
+  padding-left: var(--space-5);
+  margin: 0 0 var(--space-4) 0;
+}
+
+.cierre-impacto .impacto-lista li {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.cierre-impacto .impacto-lista li:last-child {
+  margin-bottom: 0;
+}
+
+.cierre-impacto .impacto-cierre {
+  font-weight: 600;
+  color: var(--box-alert-accent);
+}
+
+/* Lo que NO cambió en cierre */
+.cierre-no-cambio {
+  background: var(--box-info-bg);
+  border: 2px solid var(--box-info-border);
+  border-radius: var(--radius-md);
+  padding: var(--box-padding-lg);
+  margin-bottom: var(--space-6);
+}
+
+.cierre-no-cambio h3 {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-lg);
+  color: var(--box-info-accent);
+  margin-bottom: var(--space-4);
+}
+
+.cierre-no-cambio .no-cambio-intro {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+.cierre-no-cambio .no-cambio-lista {
+  list-style: disc;
+  padding-left: var(--space-5);
+  margin: 0;
+}
+
+.cierre-no-cambio .no-cambio-lista li {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+.cierre-no-cambio .no-cambio-lista li:last-child {
+  margin-bottom: 0;
 }
 
 .cierre-legal-box {

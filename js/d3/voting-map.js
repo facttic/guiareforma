@@ -162,8 +162,9 @@ export async function initVotingMap(selector, provinciasData, senadoresData, fil
   info.addTo(map);
 
   // Cargar GeoJSON
+  const base = import.meta.env.BASE_URL || '/';
   try {
-    const response = await fetch('/data/argentina-provincias-new.json');
+    const response = await fetch(`${base}data/argentina-provincias-new.json`);
     if (!response.ok) {
       throw new Error('Error cargando GeoJSON: ' + response.status);
     }

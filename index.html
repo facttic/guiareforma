@@ -118,7 +118,7 @@
           <div class="form-grid">
             <div class="form-group">
               <label for="nombre">Tu nombre <span class="optional">(opcional)</span></label>
-              <input type="text" id="nombre" name="nombre" placeholder="Para personalizar los textos">
+              <input type="text" id="nombre" name="nombre">
             </div>
 
             <div class="form-group">
@@ -144,7 +144,7 @@
             <div class="form-group">
               <label for="antiguedad">Antigüedad en tu trabajo actual</label>
               <div class="input-with-unit">
-                <input type="number" id="antiguedad" name="antiguedad" min="0" max="50" placeholder="0" required>
+                <input type="number" id="antiguedad" name="antiguedad" min="0" max="50" required>
                 <span class="unit">años</span>
               </div>
             </div>
@@ -153,7 +153,7 @@
               <label for="salario">Salario básico mensual</label>
               <div class="input-with-unit">
                 <span class="unit prefix">$</span>
-                <input type="number" id="salario" name="salario" min="0" step="1000" placeholder="800000" required>
+                <input type="number" id="salario" name="salario" min="0" step="1000" required>
               </div>
               <small class="form-hint">Solo el básico de recibo, sin extras</small>
             </div>
@@ -162,7 +162,7 @@
               <label for="variables">Extras mensuales <span class="optional">(promedio)</span></label>
               <div class="input-with-unit">
                 <span class="unit prefix">$</span>
-                <input type="number" id="variables" name="variables" min="0" step="1000" placeholder="0">
+                <input type="number" id="variables" name="variables" min="0" step="1000">
               </div>
               <small class="form-hint">Comisiones, premios, horas extra habituales</small>
             </div>
@@ -170,7 +170,7 @@
             <div class="form-group">
               <label for="horas">Horas de trabajo por día</label>
               <div class="input-with-unit">
-                <input type="number" id="horas" name="horas" min="1" max="24" placeholder="8" required>
+                <input type="number" id="horas" name="horas" min="1" max="24" required>
                 <span class="unit">hs</span>
               </div>
             </div>
@@ -1329,8 +1329,8 @@
       <div class="container">
         <header class="section-header">
           <span class="section-number">10</span>
-          <h2 id="conclusion-title">Resumen: lo que cambió</h2>
-          <p class="section-intro">Todo lo que vimos, en una sola página.</p>
+          <h2 id="conclusion-title">El contexto</h2>
+          <p class="section-intro">Historia, comparaciones y lo que sigue vigente.</p>
         </header>
 
         <div class="conclusion-content">
@@ -1401,7 +1401,7 @@
 
           <!-- Timeline histórico -->
           <div class="historia-box">
-            <h3>Las 8 horas: una conquista de sangre</h3>
+            <h3>Las 8 horas: una conquista de vidas</h3>
             <p class="historia-intro">Los derechos laborales no fueron regalados. Se conquistaron con luchas, huelgas y vidas.</p>
 
             <div class="historia-timeline">
@@ -1606,151 +1606,8 @@
             </div>
           </div>
 
-          <!-- Fechas clave -->
-          <div class="fechas-box">
-            <h3>Fechas clave</h3>
-            <div class="fechas-timeline">
-              <div class="fecha-item">
-                <span class="fecha-fecha">12 Feb 2025</span>
-                <span class="fecha-desc">Aprobación en Senado (42-30)</span>
-              </div>
-              <div class="fecha-item">
-                <span class="fecha-fecha">20 Feb 2025</span>
-                <span class="fecha-desc">Aprobación en Diputados (135-115)</span>
-              </div>
-              <div class="fecha-item destacada">
-                <span class="fecha-fecha">Mar 2025</span>
-                <span class="fecha-desc">Promulgación y entrada en vigencia de la ley</span>
-              </div>
-              <div class="fecha-item">
-                <span class="fecha-fecha">1 Jun 2026</span>
-                <span class="fecha-desc">Entrada en vigencia del FAL (Fondo de Cese)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Resumen de impacto -->
-          <div class="impacto-resumen-box">
-            <h3>En resumen: una reforma que debilita tus derechos</h3>
-            <p>Esta reforma representa un retroceso en las conquistas laborales históricas de los trabajadores argentinos. Bajo el nombre de "modernización", se flexibilizan protecciones que costaron décadas conseguir:</p>
-            <ul class="impacto-lista">
-              <li><strong>Menos plata en tu bolsillo:</strong> indemnizaciones más bajas, horas extra que pueden no pagarse, y un fondo de cese que sale de tu salario.</li>
-              <li><strong>Más poder para tu empleador:</strong> convenios de empresa que pueden ser peores que los nacionales, jornadas flexibles según necesidades de la empresa, vacaciones fragmentadas.</li>
-              <li><strong>Menos herramientas para defenderte:</strong> cuota sindical voluntaria que debilita a los gremios, restricciones al derecho de huelga, bloqueos como causal de despido.</li>
-              <li><strong>Beneficios para empleadores infractores:</strong> blanqueo con 70-90% de condonación para quienes tuvieron trabajadores sin registrar, eliminación de multas.</li>
-            </ul>
-            <p class="impacto-cierre">La reforma amplía la flexibilidad empresarial a costa de la estabilidad laboral y el bienestar de quienes trabajan.</p>
-          </div>
-
-          <!-- Lo que NO cambió -->
-          <div class="no-cambio-box">
-            <h3>Derechos que siguen vigentes: hacelos valer</h3>
-            <p class="no-cambio-intro">Estos derechos no los tocaron. Conocelos y exigilos:</p>
-            <ul class="no-cambio-lista">
-              <li><strong>Licencias por enfermedad:</strong> Seguís cobrando el 100% de tu sueldo. No dejes que te digan lo contrario.</li>
-              <li><strong>Días de vacaciones:</strong> La cantidad según antigüedad sigue igual. Que no te las recorten.</li>
-              <li><strong>Aguinaldo:</strong> Se sigue pagando en junio y diciembre. Es tu derecho.</li>
-              <li><strong>Despido con causa:</strong> Sigue requiriendo justificación real. Pedí que te la den por escrito.</li>
-            </ul>
-          </div>
 
           
-          <!-- Qué hacer -->
-          <div class="acciones-box">
-            <h3>¿Qué podés hacer?</h3>
-            <div class="acciones-grid">
-              <div class="accion-item">
-                <span class="accion-icono">📖</span>
-                <strong>Informarte</strong>
-                <p>Leé el texto completo de la ley. Acá resumimos lo más importante, pero hay más.</p>
-              </div>
-              <div class="accion-item">
-                <span class="accion-icono">🗣️</span>
-                <strong>Hablar con tu sindicato</strong>
-                <p>Conocen tu convenio colectivo y pueden explicarte cómo te afecta específicamente.</p>
-              </div>
-              <div class="accion-item">
-                <span class="accion-icono">🧾</span>
-                <strong>Revisar tu recibo</strong>
-                <p>Chequeá los descuentos, la cuota sindical y los aportes. Guardá los últimos 12 meses.</p>
-              </div>
-              <div class="accion-item">
-                <span class="accion-icono">🤝</span>
-                <strong>Organizarte</strong>
-                <p>Hablá con tus compañeros y compañeras. Juntos tienen más fuerza para negociar.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Recursos -->
-          <div class="recursos-box">
-            <h3>Recursos útiles</h3>
-            <div class="recursos-grid">
-              <a href="https://www.argentina.gob.ar/sites/default/files/proyecto_de_ley_de_modernizacion_laboral._vf.pdf" class="recurso-link" target="_blank" rel="noopener">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>PDF del proyecto de ley</span>
-              </a>
-              <a href="https://www.boletinoficial.gob.ar/" class="recurso-link" target="_blank" rel="noopener">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Boletín Oficial</span>
-              </a>
-              <a href="https://facttic.org.ar" class="recurso-link facttic" target="_blank" rel="noopener">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>FACTTIC - Cooperativas de tecnología</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Sobre FACTTIC -->
-          <div class="facttic-box">
-            <h3>¿Quiénes hicimos esto?</h3>
-            <p>Somos <strong>FACTTIC</strong>, la Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento.</p>
-            <p>Somos trabajadores organizados y autogestionados. Elegimos mejorar nuestras condiciones laborales en vez de empeorarlas. Por eso nos preocupa una reforma que va en la dirección contraria.</p>
-            <p class="facttic-cta">Si querés saber más sobre las cooperativas de tecnología, visitá <a href="https://facttic.org.ar" target="_blank" rel="noopener">facttic.org.ar</a></p>
-          </div>
-
-          <!-- Compartir -->
-          <div class="compartir-box">
-            <h3>Compartí esta información</h3>
-            <p class="compartir-intro">Si te sirvió, compartilo con tus compañeros de trabajo.</p>
-            <div class="compartir-buttons">
-              <button class="compartir-btn whatsapp" data-share="whatsapp">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                WhatsApp
-              </button>
-              <button class="compartir-btn twitter" data-share="twitter">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-                Twitter/X
-              </button>
-              <button class="compartir-btn instagram" data-share="instagram">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-                Instagram
-              </button>
-              <button class="compartir-btn copiar" data-share="copy">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-                </svg>
-                Copiar link
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1883,7 +1740,7 @@
 
           <div class="cierre-mensaje">
             <blockquote class="cierre-quote">
-              <p>"Los derechos de los trabajadores no cayeron del cielo. Se conquistaron con organización, con lucha, y a veces con sangre."</p>
+              <p>"Los derechos de los trabajadores no cayeron del cielo. Se conquistaron con organización, con lucha, y a veces con vidas."</p>
             </blockquote>
 
             <div class="cierre-texto">
@@ -1893,6 +1750,54 @@
 
               <p>No estás solo/a. Hay sindicatos, delegados, organizaciones y compañeros/as que están en la misma situación. <strong>La solidaridad entre trabajadores es nuestra mayor fortaleza.</strong></p>
             </div>
+          </div>
+
+          <!-- Fechas clave -->
+          <div class="cierre-fechas">
+            <h3>Fechas clave</h3>
+            <div class="fechas-timeline">
+              <div class="fecha-item">
+                <span class="fecha-fecha">12 Feb 2025</span>
+                <span class="fecha-desc">Aprobación en Senado (42-30)</span>
+              </div>
+              <div class="fecha-item">
+                <span class="fecha-fecha">20 Feb 2025</span>
+                <span class="fecha-desc">Aprobación en Diputados (135-115)</span>
+              </div>
+              <div class="fecha-item destacada">
+                <span class="fecha-fecha">Mar 2025</span>
+                <span class="fecha-desc">Promulgación y entrada en vigencia de la ley</span>
+              </div>
+              <div class="fecha-item">
+                <span class="fecha-fecha">1 Jun 2026</span>
+                <span class="fecha-desc">Entrada en vigencia del FAL (Fondo de Cese)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resumen de impacto -->
+          <div class="cierre-impacto">
+            <h3>En resumen: una reforma que debilita tus derechos</h3>
+            <p>Esta reforma representa un retroceso en las conquistas laborales históricas de los trabajadores argentinos. Bajo el nombre de "modernización", se flexibilizan protecciones que costaron décadas conseguir:</p>
+            <ul class="impacto-lista">
+              <li><strong>Menos plata en tu bolsillo:</strong> indemnizaciones más bajas, horas extra que pueden no pagarse, y un fondo de cese que sale de tu salario.</li>
+              <li><strong>Más poder para tu empleador:</strong> convenios de empresa que pueden ser peores que los nacionales, jornadas flexibles según necesidades de la empresa, vacaciones fragmentadas.</li>
+              <li><strong>Menos herramientas para defenderte:</strong> cuota sindical voluntaria que debilita a los gremios, restricciones al derecho de huelga, bloqueos como causal de despido.</li>
+              <li><strong>Beneficios para empleadores infractores:</strong> blanqueo con 70-90% de condonación para quienes tuvieron trabajadores sin registrar, eliminación de multas.</li>
+            </ul>
+            <p class="impacto-cierre">La reforma amplía la flexibilidad empresarial a costa de la estabilidad laboral y el bienestar de quienes trabajan.</p>
+          </div>
+
+          <!-- Lo que NO cambió -->
+          <div class="cierre-no-cambio">
+            <h3>Derechos que siguen vigentes: hacelos valer</h3>
+            <p class="no-cambio-intro">Estos derechos no los tocaron. Conocelos y exigilos:</p>
+            <ul class="no-cambio-lista">
+              <li><strong>Licencias por enfermedad:</strong> Seguís cobrando el 100% de tu sueldo. No dejes que te digan lo contrario.</li>
+              <li><strong>Días de vacaciones:</strong> La cantidad según antigüedad sigue igual. Que no te las recorten.</li>
+              <li><strong>Aguinaldo:</strong> Se sigue pagando en junio y diciembre. Es tu derecho.</li>
+              <li><strong>Despido con causa:</strong> Sigue requiriendo justificación real. Pedí que te la den por escrito.</li>
+            </ul>
           </div>
 
           <div class="cierre-acciones">
@@ -1922,6 +1827,54 @@
             <p>Somos la <strong>Federación Argentina de Cooperativas de Trabajo de Tecnología, Innovación y Conocimiento</strong>.</p>
             <p>Trabajadores que elegimos organizarnos de otra forma: sin patrones, con autogestión y solidaridad. Porque creemos que otro modelo de trabajo es posible.</p>
             <a href="https://facttic.org.ar" target="_blank" rel="noopener" class="facttic-link-cierre">Conocé más sobre nosotros →</a>
+          </div>
+
+          <!-- Recursos útiles -->
+          <div class="cierre-recursos">
+            <h3>Recursos útiles</h3>
+            <div class="recursos-grid">
+              <a href="https://www.argentina.gob.ar/sites/default/files/proyecto_de_ley_de_modernizacion_laboral._vf.pdf" class="recurso-link" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>PDF del proyecto de ley</span>
+              </a>
+              <a href="https://www.boletinoficial.gob.ar/" class="recurso-link" target="_blank" rel="noopener">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Boletín Oficial</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Compartir -->
+          <div class="cierre-compartir">
+            <h3>Compartí esta información</h3>
+            <p class="compartir-intro">Si te sirvió, compartilo con tus compañeros de trabajo.</p>
+            <div class="compartir-buttons">
+              <button class="compartir-btn whatsapp" data-share="whatsapp">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+              </button>
+              <button class="compartir-btn twitter" data-share="twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                Twitter/X
+              </button>
+              <button class="compartir-btn copiar" data-share="copy">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                Copiar link
+              </button>
+            </div>
           </div>
 
           <div class="cierre-legal-box">
