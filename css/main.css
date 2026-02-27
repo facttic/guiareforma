@@ -2993,7 +2993,9 @@ section[id] {
 
 @media (min-width: 768px) {
   .footer-content {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 200px;
+    align-items: start;
+    gap: var(--space-8);
   }
 
   .footer-legal {

@@ -49,7 +49,7 @@
   }
 
   .footer-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 180px;
   }
 
   .recursos-grid {
@@ -150,7 +150,7 @@
   }
 
   .footer-content {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 200px;
   }
 
   .otros-cards {
