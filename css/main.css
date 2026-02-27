@@ -653,6 +653,13 @@ section[id] {
   font-size: var(--text-hand-base);
   font-weight: 600;
   color: var(--color-ink);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-title {
+    display: block;
+  }
 }
 
 .logo-text {
