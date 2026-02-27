@@ -639,6 +639,20 @@ section[id] {
 
 .facttic-logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 32px;
+  width: auto;
+}
+
+.site-title {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-hand-base);
+  font-weight: 600;
+  color: var(--color-ink);
 }
 
 .logo-text {
@@ -2707,10 +2721,8 @@ section[id] {
 }
 
 .facttic-logo-cierre {
-  font-family: var(--font-handwritten);
-  font-size: var(--text-hand-xl);
-  font-weight: 700;
-  color: #2563eb;
+  height: 48px;
+  width: auto;
   margin-bottom: var(--space-3);
 }
 
@@ -2913,6 +2925,23 @@ section[id] {
   padding-top: var(--space-2);
   border-top: 1px dashed var(--color-border);
   margin-top: var(--space-3) !important;
+}
+
+/* Hero badge con logo */
+.hero-badge {
+  margin-bottom: var(--space-4);
+}
+
+.hero-logo-img {
+  height: 80px;
+  width: auto;
+}
+
+/* Footer logo */
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  margin-bottom: var(--space-3);
 }
 
 /* Hero disclaimer - sutil en gris */
