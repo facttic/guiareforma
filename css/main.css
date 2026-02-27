@@ -2940,6 +2940,17 @@ section[id] {
   gap: var(--space-6);
 }
 
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .footer-legal {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
 .footer-about h4,
 .footer-links h4 {
   color: white;
