@@ -196,7 +196,7 @@ function saveData() {
 }
 
 /**
- * Cargar datos guardados
+ * Cargar datos guardados o ejemplo por defecto
  */
 function loadSavedData() {
   try {
@@ -214,9 +214,40 @@ function loadSavedData() {
       if (onChangeCallback) {
         onChangeCallback(userData);
       }
+    } else {
+      // No hay datos guardados: cargar ejemplo por defecto
+      loadExampleData();
     }
   } catch (e) {
     console.warn('No se pudo cargar desde localStorage:', e);
+    // En caso de error, cargar ejemplo
+    loadExampleData();
+  }
+}
+
+/**
+ * Cargar datos de ejemplo por defecto
+ */
+function loadExampleData() {
+  userData = {
+    nombre: '',
+    sector: 'comercio',
+    antiguedad: 8,
+    salario: 1200000,
+    variables: 0,
+    horas: 9,
+    tipoEmpresa: 'pyme',
+    afiliado: true,
+    convenio: true,
+    isExample: true
+  };
+
+  // No mostrar botón reset para datos de ejemplo
+  updateResetButtonVisibility(false);
+
+  // Notificar para que se muestren las calculadoras
+  if (onChangeCallback) {
+    onChangeCallback(userData);
   }
 }
 
