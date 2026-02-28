@@ -270,6 +270,13 @@ function updateAllCalculators() {
  * Mostrar contenido personalizado
  */
 function showPersonalizedContent() {
+  // Mostrar calculadoras (contenedor padre)
+  const calculadoras = document.querySelectorAll('.calculadora');
+  calculadoras.forEach(el => {
+    el.hidden = false;
+  });
+
+  // Mostrar contenido personalizado dentro
   const personalizadas = document.querySelectorAll('.calc-personalizada');
   personalizadas.forEach(el => {
     el.hidden = false;
