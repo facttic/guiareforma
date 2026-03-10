@@ -4,7 +4,6 @@
     "titulo": "Indemnización por despido",
     "articulo": 51,
     "articuloLCT": 245,
-    "lineaPDF": [821, 870],
     "antes": {
       "descripcion": "Sin tope real sobre el salario base",
       "detalle": "Se calculaba sobre la mejor remuneración mensual, normal y habitual, incluyendo todos los conceptos"
@@ -21,7 +20,6 @@
     "titulo": "Banco de horas",
     "articulo": [42, 43],
     "articuloLCT": [197, 198],
-    "lineaPDF": [647, 673],
     "antes": {
       "descripcion": "Horas extra se pagan 50% más (días hábiles) o 100% más (feriados/fines de semana)",
       "detalle": "Las horas extraordinarias siempre se pagaban con recargo"
@@ -36,9 +34,8 @@
   "huelga": {
     "id": "huelga",
     "titulo": "Derecho de huelga",
-    "articulo": 98,
+    "articulo": 101,
     "articuloLey": "24 Ley 25.877",
-    "lineaPDF": [1568, 1682],
     "antes": {
       "descripcion": "Sin mínimo fijo de servicios durante huelgas",
       "detalle": "Los servicios mínimos se negociaban caso por caso"
@@ -55,7 +52,6 @@
     "titulo": "Cuota sindical",
     "articulo": [37, 137],
     "articuloLey": ["133 LCT", "38 Ley 23.551"],
-    "lineaPDF": [527, 2392],
     "antes": {
       "descripcion": "Descuento automático obligatorio",
       "detalle": "El empleador retenía la cuota sindical del sueldo automáticamente"
@@ -72,7 +68,6 @@
     "titulo": "Convenios colectivos",
     "articulo": [131, 132],
     "articuloLey": "19 Ley 14.250",
-    "lineaPDF": [2269, 2295],
     "antes": {
       "descripcion": "Convenio nacional/sectorial prevalece",
       "detalle": "Los convenios de mayor ámbito protegían a todos los trabajadores del sector"
@@ -87,15 +82,14 @@
   "fal": {
     "id": "fal",
     "titulo": "Fondo de Asistencia Laboral (FAL)",
-    "articulo": "58-76",
-    "lineaPDF": [1023, 1270],
+    "articulo": "58-77",
     "antes": {
       "descripcion": "No existía",
       "detalle": "Las indemnizaciones se pagaban directamente del patrimonio del empleador"
     },
     "despues": {
-      "descripcion": "Contribución obligatoria del 3% del salario",
-      "detalle": "El empleador aporta mensualmente a un fondo que cubre indemnizaciones. Carencia de 6 meses. El empleador sigue siendo responsable del pago total."
+      "descripcion": "Contribución obligatoria: 1% grandes empresas, 2,5% MiPyMEs",
+      "detalle": "El empleador aporta mensualmente a un fondo que cubre indemnizaciones. Grandes empresas: 1% (hasta 1,5%). MiPyMEs: 2,5% (hasta 3%). Carencia de 6 meses. El empleador sigue siendo responsable del pago total."
     },
     "fraseJefe": "Ahora aportamos al FAL todos los meses, es un costo extra que tenemos.",
     "accion": "Verificá que tu empleador esté haciendo los aportes correctamente."
