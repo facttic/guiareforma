@@ -773,7 +773,7 @@ section[id] {
 .section-intro {
   font-size: var(--text-base);
   color: var(--color-ink-light);
-  max-width: 540px;
+  max-width: 700px;
   line-height: var(--leading-normal);
 }
 
